@@ -1,0 +1,16 @@
+\begin{table}
+\begin{tabular}{cccc}
+\hline \hline
+Catalog & $\sigma_{\alpha^*}$ & $\sigma_\delta$ & $\sigma_{\rm pos,max}$ \\
+\hline
+GAIADR1 & 626 & 564 & 765 \\
+GAIADR2 & 233 & 211 & 264 \\
+GDR2BGT & 120 & 109 & 136 \\
+ICRF1 & 493 & 570 & 640 \\
+ICRF2 & 397 & 739 & 766 \\
+ICRF3SX & 127 & 218 & 223 \\
+ICRF3K & 74 & 136 & 139 \\
+ICRF3XKA & 76 & 104 & 115 \\
+\hline
+\end{tabular}
+\end{table}

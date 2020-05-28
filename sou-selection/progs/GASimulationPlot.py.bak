@@ -1,0 +1,105 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Mar 30 16:47:01 2016
+
+@author: Neo
+Oct 25, 2016: updated by Niu.
+"""
+
+
+####################################################################
+##Test the codes
+#from fun import simulation, axis_rot
+#from Data_Load import Apm_Load 
+#import numpy as np
+#dat_fil = 'icrf2_sou.apm'
+#[Sou, V, V_err, V_RA, V_Dec, Va_E, Vd_E, RA, Dec] = Apm_Load(dat_fil)
+#[ua, ud] = simulation(RA, Dec)
+#print ua[0],ud[0]
+#sig = np.ones(len(ua))
+#
+#[w,sigw,wx,wy,wz,sigwx,sigwy,sigwz,sigwxy,sigwxz,sigwyz,chi]\
+#    =axis_rot(ua, ud, sig, sig, RA, Dec)
+#    
+#print w,wx,wy,wz
+##Test finished
+#####################################################################
+import numpy as np
+import matplotlib.pyplot as plt
+
+res_dir = '../results/'
+dat_fil = ['OVsim.dat', 'GRsim.dat']
+
+#glide for the three special catalog
+w3 = np.loadtxt(res_dir + 'SpecialSets.sim', usecols=(1,3,5,7))
+
+Num = np.loadtxt(res_dir + dat_fil[0], usecols=(0,), dtype=int)
+W, W_E, WX, WX_E, WY, WY_E, WZ, WZ_E = \
+        np.loadtxt(res_dir + dat_fil[0], usecols=range(1,9), unpack=True)
+Wg, W_Eg, WXg, WX_Eg, WYg, WY_Eg, WZg, WZ_Eg = \
+        np.loadtxt(res_dir + dat_fil[1], usecols=range(1,9), unpack=True)
+
+i = Num
+y = np.ones(Num.size)
+    
+#fig, ax = plt.subplots(2, 2)
+#((ax1, ax2), (ax3, ax4)) = ax
+#
+#ax1.plot(i, WX, 'b')
+#ax1.plot(i, WXg, 'r')
+#ax1.set_ylabel('$g_x$',fontsize = 25)
+#ax1.plot(i, w3[0][1]*y, ':', label = '212 ICRF' )
+#ax1.plot(i, w3[1][1]*y, '-.', label = '295 ICRF' )
+#ax1.plot(i, w3[2][1]*y, '--', label = '247 MFV' )
+#
+#ax2.plot(i, WY, 'b')
+#ax2.plot(i, WYg, 'r')
+#ax2.set_ylabel('$g_y$',fontsize = 25)
+#ax2.plot(i, w3[0][2]*y, ':', label = '212 ICRF'  )
+#ax2.plot(i, w3[1][2]*y, '-.', label = '295 ICRF' )
+#ax2.plot(i, w3[2][2]*y, '--', label = '247 MFV' )
+#
+#ax3.plot(i, WZ, 'b')
+#ax3.plot(i, WZg, 'r')
+#ax3.set_ylabel('$g_z$',fontsize = 25)
+#ax3.plot(i, w3[0][3]*y, ':', label = '212 ICRF'  )
+#ax3.plot(i, w3[1][3]*y, '-.', label = '295 ICRF' )
+#ax3.plot(i, w3[2][3]*y, '--', label = '247 MFV' )
+#    
+#ax4.plot(i, W, 'b')
+#ax4.plot(i, Wg, 'r')
+#ax4.set_ylabel('$g$',fontsize = 25)
+#ax4.plot(i, w3[0][0]*y, ':' , label = '212 ICRF' )
+#ax4.plot(i, w3[1][0]*y, '-.', label = '295 ICRF' )
+#ax4.plot(i, w3[2][0]*y, '--', label = '247 MFV' )
+#
+#ax1.legend()
+#ax2.legend()
+#ax3.legend(loc=4)
+#ax4.legend()
+#
+#ax1.set_xlabel('No. Sources',fontsize = 15)
+#ax2.set_xlabel('No. Sources',fontsize = 15)
+#ax3.set_xlabel('No. Sources',fontsize = 15)
+#ax4.set_xlabel('No. Sources',fontsize = 15)
+    
+##Acutually only plot for g is needed.
+plt.plot(i, W,  'b', linewidth=3)
+plt.plot(i, Wg, 'r', linewidth=3)
+plt.ylabel('$g$',fontsize = 30)
+plt.plot(i, w3[0][0]*y, 'b--' , label = '212 ICRF' )
+plt.plot(i, w3[1][0]*y, 'g--',  label = '295 ICRF' )
+plt.plot(i, w3[2][0]*y, 'y--',  label = '247 MFV' )
+plt.plot(i, w3[3][0]*y, 'k--',  label = '260 AMS' )
+plt.yticks(fontsize = 15)
+plt.xticks(np.arange(100,600,50), \
+    ['100','','200','','300','','400','','500',''],\
+    fontsize = 15)
+plt.xlim([100, max(i)])
+plt.ylim([0, 1])
+plt.legend(loc=0)
+plt.xlabel('No. Sources',fontsize = 20)
+
+plt.show()
+plt.savefig('../plot/simulation.eps', dpi=100)
+plt.close()

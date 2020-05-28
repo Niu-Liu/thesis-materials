@@ -1,0 +1,51 @@
+#############################################################
+##The scripts runs at 2016-12-06 23:42:17
+
+## The Glide in equatorial coordinates (mas):
+[ 0.   -0.11 -0.05]
+## magnitude (uas/yr):
+8.81974158657
+## The Glide in galactic coordinates (mas):
+[ 0.12026983  0.01158215 -0.00101079]
+The dipole apex in galactic coordinates (l,b): (5.50, -0.48)
+
+## The Glide in equatorial coordinates (mas):
+[-0.02 -0.08 -0.1 ]
+## magnitude (uas/yr):
+9.46093532614
+## The Glide in galactic coordinates (mas):
+[ 0.11935598 -0.04899404 -0.01239894]
+The dipole apex in galactic coordinates (l,b): (337.68, -5.49)
+
+## The Glide in equatorial coordinates (mas):
+[ 0.01 -0.08 -0.13]
+## magnitude (uas/yr):
+11.1657361612
+## The Glide in galactic coordinates (mas):
+[ 0.13222476 -0.05658023 -0.05210844]
+The dipole apex in galactic coordinates (l,b): (336.83, -19.92)
+
+## The Glide in equatorial coordinates (mas):
+[ 0.01 -0.07 -0.11]
+## magnitude (uas/yr):
+9.54503418294
+## The Glide in galactic coordinates (mas):
+[ 0.11381369 -0.04608888 -0.04496953]
+The dipole apex in galactic coordinates (l,b): (337.95, -20.11)
+
+## The Glide in equatorial coordinates (mas):
+[-0.04 -0.14 -0.07]
+## magnitude (uas/yr):
+11.7923316945
+## The Glide in galactic coordinates (mas):
+[ 0.15834467 -0.00977699  0.03051847]
+The dipole apex in galactic coordinates (l,b): (356.47, 10.89)
+
+## The Glide in equatorial coordinates (mas):
+[-0.01 -0.12 -0.12]
+## magnitude (uas/yr):
+12.4087591241
+## The Glide in galactic coordinates (mas):
+[ 0.16342141 -0.04119941 -0.02227223]
+The dipole apex in galactic coordinates (l,b): (345.85, -7.53)
+

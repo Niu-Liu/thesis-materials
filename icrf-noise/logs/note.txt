@@ -1,0 +1,8 @@
+deci-test-a:
+	different network and rather equal number of observations
+deci-test-b:
+	every well-defined type sessions divided into two subsets (odd/even)
+deci-test-c:
+	all sessions divided into two subsets (odd/even)
+NOTE:
+All sessions are sorted chronologically.

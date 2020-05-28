@@ -1,0 +1,873 @@
+<HTML>
+<HEAD>
+<BODY >
+<TITLE> INTERNATIONAL CELESTIAL REFERENCE FRAME </TITLE>
+</HEAD>
+
+<CENTER><H2><IMG SRC="../images/hb11.gif" HEIGHT=8 WIDTH=500></H2></CENTER>
+<CENTER><H2><B>DICTIONARY OF DESIGNATION<P> </B></H2></CENTER>
+<CENTER><H2><IMG SRC="../images/hb11.gif" HEIGHT=8 WIDTH=500></H2></CENTER>
+</B>
+<p>
+
+<FONT SIZE=4>
+<PRE>
+
+
+
+B. Archinal (1), E.F. Arias (2,3), A.-M. Gontier (2), C. Mercuri-Moreau (2),
+O.J. Sovers (4)
+
+1. U.S. Naval Observatory
+2. Central Bureau of IERS, Observatoire de Paris/CNRS URA1125
+3. Facultad de Ciencias Astronomicas y Geofisicas de La Plata; Observatorio
+    Naval Buenos Aires; CONICET, Argentina
+4. Jet Propulsion Laboratory
+
+
+        While deriving the database of physical characteristics described in
+file "icrf.car", information was also maintained on alternate (or alias) names
+for the various radio sources. Additional sources of alias names were then used
+to add additional names to the database.
+
+        The following sources were used overall.
+
+        * The "VLBI survey", 1985, Preston R.A., Morabito D.D., Williams J.G.,
+Faulkner J., Jauncey D.L., Nicolson G.D., Astron. J., 90, p. 1559. The survey
+was conducted by performing 2.29 GHz VLBI observations over the full sky. The
+result is a catalogue of 1398 objects with the following information: redshift,
+total flux, spectral index, optical identification, visual magnitude and
+references.
+
+        * The "Quasars and Active Galactic Nuclei (7th edition, 1996)" list of
+M.P. Veron-Cetty and P. Veron.  This was published as an ESO Scientific Report
+in 1996. This list includes 8609 quasars (defined as brighter than absolute
+B magnitude -23), 2833 AGNs (defined as fainter than absolute B magnitude -23),
+220 BL Lac objects from 1662 references, and a list of 52 objects which at one
+time were considered quasars but have since been rejected as such objects. This
+catalogue is available from either the NASA/GSFC Astronomical Data Center (ADC)
+(http://adc.gsfc.nasa.gov/) or the Centre de Donnees astronomiques de
+Strasbourg (CDS) (http://cdsweb.u-strasbg.fr/CDS.html) as catalogue 7188
+(or VII-188).
+
+        * "A Revised and Updated Catalog of Quasi-stellar Objects.", 1993,
+Hewitt, A. and Burbridge, G., Astrophys. J. Suppl. Ser., 87, p. 451. This list
+is a catalogue of all known quasi-stellar objects (QSO's) with measured
+emission redshifts and BL Lac objects, complete to 1992 December 31. The
+catalogue and references contain extensive information on names, positions,
+magnitudes, color, emission-line redshifts, absorption, variability,
+polarization, and X-ray, radio, and infrared data. This catalogue is available
+from the ADC or the CDS (as catalogue 7158 or VII-158) respectively.
+
+        * A listing "Master Source List" by T. Marshall Eubanks (private
+communication, January 14, 1997), giving for 691 radio sources a positional
+style (B1950.0) name, the "blokq.dat" name (as used by NASA/GSFC and USNO for
+observing and data reduction), J2000.0 coordinates, object type, redshift, and
+V magnitude.
+
+        * A listing of radio source names maintained by the IERS Central Bureau,
+entitled "Dictionary of Radio Source Names". This list concerns 2569 sources and
+is available via anonymous ftp from 145.238.100.28 (hpiers.obspm.fr), file
+"iers/icrf/ar96/dico.rsc".
+
+        * A listing of radio source names maintained by O.J. Sovers.
+
+        This research has made use of 
+
+        * the NASA/IPAC Extragalactic Database (NED), which is operated by the
+Jet Propulsion Laboratory, Caltech, under contract with the National Aeronautics
+and Space Administration.
+
+        * the Simbad database, operated by the Centre de Donnees Astronomiques
+de Strasbourg (CDS).
+
+        For additional information on astronomical nomenclature, and references
+for most of the acronyms used here, see the "Dictionary of Nomenclature of
+Celestial Objects", maintained by the IAU on the world wide web at
+http://vizier.u-strasbg.fr:8008/cgi-bin/Dic-Simbad.
+
+        The following table is a list, ordered by J2000.0 right ascension, of
+the possible aliases found for each source. Each line contains information for
+one radio source, up to 17 names are possible (i.e. for 3C 273B).
+
+        It is planned to continue to improve this list of aliases with new
+information as it becomes available and via searches through the NED, Simbad,
+and other databases. This list, versions of it sorted in different ways, and
+future versions of this information will be posted to the following ftp and web
+sites:
+     anonymous ftp:   145.238.100.28 (hpiers.obspm.fr)        -this site-
+                      cd iers/icrf
+ 
+     www:             http://maia.usno.navy.mil/icrf
+                      http://hpiers.obspm.fr/webiers/results/icrf/readme.html
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Table III-5. Dictionary of aliases
+
+           
+Notes:
+
+    (1)  ICRF Designations, constructed from J2000.0 coordinates with the format
+                ICRF JHHMMSS.s+DDMMSS      or      ICRF JHHMMSS.s-DDMMSS
+         They follow the recommendations of the IAU Task Group on Designations.
+
+    (2)  IERS designation, previously constructed from B1950 coordinates.
+         The complete format, including acronym and epoch in addition to the
+         coordinates, is 
+                IERS BHHMM+DDd      or      IERS BHHMM-DDd
+
+    (3)  "blokq.dat" name, as in databases at USNO and GSFC. Blank if same as
+         IERS designation. Note that this is not necessarily a name that follows
+         the IAU nomenclature rules. These names are provided so as to allow
+         easier access to the original data.
+
+    (4)  JPL name. Blank if same as "blokq.dat" name. Note that this is not
+         necessarily a name that follows the IAU nomenclature rules. These names
+         are provided so as to allow easier access to the original data.
+
+    (5)  Other ("alias") names, up to 13 names are possible. Names already given
+         are not repeated. If they exist, preliminary ICRF names are given 
+         first. These are not the currently recommended ones but were published
+         earlier for the Hipparcos link objects in the 1995 IERS Annual Report,
+         p. II-21 to II-29. Additional names are given in alphabetical order.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ICRF Designation       IERS Des. GSFC/USNO    JPL        Other names
+          (1)            (2)       (3)        (4)            (5)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ICRF J000435.6-473619  0002-478                          P 0002-478                PKS 0002-478   
+ICRF J000557.1+382015  0003+380            GC 0003+38    ICRF J000557.18+382015.1  4C 38.02       S4 0003+38     
+ICRF J000613.8-062335  0003-066                          NRAO 5                    PHL 2625       PKS 0003-066   
+ICRF J001031.0+105829  0007+106  IIIZW2    III ZW 2      ICRF J001031.01+105829.5  0008+106       III Zw 2       PKS 0007+106   
+ICRF J001033.9+172418  0007+171            GC 0007+17    ICRF J001033.99+172418.8  4C 17.04       GC 0007+171    MC3 0007+171   OB 113         PKS 0007+171   PKS 0008+171   
+
+ICRF J001052.5-415310  0008-421            P 0008-42     PKS 0008-42               
+ICRF J001101.2-261233  0008-264            P 0008-264    PKS 0008-264              
+ICRF J001331.1+405137  0010+405                          ICRF J001331.13+405137.1  4C 40.01       B3 0010+406    GC 0010+40     S4 0010+40     
+ICRF J001611.0-001512  0013-005            P 0013-00     PKS 0013-00               PKS 0013-005   
+ICRF J001708.4+813508  0014+813                          ICRF J001708.47+813508.1  0014+81        S5 0014+81     S5 0014+813    
+
+ICRF J001945.7+732730  0016+731                          0016+73                   S5 0016+73     S5 0016+731    
+ICRF J002232.4+060804  0019+058            P 0019+058    GC 0019+05                PKS 0019+058   
+ICRF J002442.9-420203  0022-423                          P 0022-423                PKS 0022-423   
+ICRF J002914.2+345632  0026+346            OB 343        S4 0226+34                
+ICRF J003824.8+413706  0035+413                          S4 0035+41                
+
+ICRF J004204.5+232001  0039+230                          ICRF J004204.55+232001.1  PKS 0039+230   
+ICRF J004959.4-573827  0047-579            P 0047-579    ICRF J004959.47-573827.3  PKS 0047-579   
+ICRF J005041.3-092905  0048-097            P 0048-09     OB 081                    PHL 856        PKS 0048-09    PKS 0048-097   
+ICRF J005846.5-565911  0056-572                           P 0056-572               PKS 0056-572   
+ICRF J005905.5+000651  0056-001            P 0056-00     4C 00.06                  DA 32          OB 094         PHL 923        PKS 0056-00    PKS 0056-001   
+
+ICRF J010245.7+582411  0059+581                                                    
+ICRF J010645.1-403419  0104-408            P 0104-408    PKS 0104-408              
+ICRF J010838.7+013500  0106+013            P 0106+01     4C 01.02                  GC 0106+013    OC 012         PB 6280        PKS 0106+01    PKS 0106+013   
+ICRF J011137.3+390628  0108+388            GC 0108+38    S4 0108+38                
+ICRF J011205.8+224438  0109+224            GC 0109+22    ICRF J011205.82+224438.8  GC 0109+224    S2 0109+22     
+
+ICRF J011327.0+494824  0110+495                          S4 0110+49                
+ICRF J011343.1+022217  0111+021            P 0111+021    ICRF J011343.14+022217.3  PKS 0111+021   
+ICRF J011517.0-012704  0112-017            P 0112-017    PB 6342                   PKS 0112-017   UM 310         
+ICRF J011612.5-113615  0113-118            P 0113-118    PKS 0113-11               PKS 0113-118   
+ICRF J011935.0+321050  0116+319            OC 328        4C 31.04                  
+
+ICRF J012031.6-270124  0118-272            P 0118-272    PKS 0118-272              
+ICRF J012141.5+114950  0119+115            P 0119+11     PKS 0119+11               PKS 0119+115   
+ICRF J012156.8+042224  0119+041            GC 0119+04    GC 0119+041               OC 033         PKS 0119+041   
+ICRF J012642.7+255901  0123+257            P 0123+25     ICRF J012642.79+255901.3  4C 25.05       OC 240         PKS 0123+25    PKS 0123+257   
+ICRF J013305.7-520003  0131-522            P 0131-522    ICRF J013305.76-520003.9  PKS 0131-522   
+
+ICRF J013658.5+475129  0133+476            DA 55         ICRF J013658.59+475129.1  OC 457         S4 0133+47     
+ICRF J013738.3-243053  0135-247                          ICRF J013738.35-243053.9  0136-247       OC 259         OC-259         PKS 0135-247   
+ICRF J013741.2+330935  0134+329  3C48      3C 48         ICRF J013741.30+330935.1  3C 48.0        3CR 48         4C 32.08       B2 0134+329    CTA 15         DA 54          NRAO 79        OC 358         
+ICRF J014125.8-092843  0138-097                          ICRF J014125.83-092843.7  P 0138-097     PKS 0138-097   PKS 0139-09    
+ICRF J014922.3+055553  0146+056                          GC 0146+056               OC 079         PKS 0146+056   
+
+ICRF J015002.6-072548  0147-076                          IRAS 01475-0740           
+ICRF J015127.1+274441  0148+274            GC 0148+27    ICRF J015127.15+274441.8  
+ICRF J015218.0+220707  0149+218            P 0149+21     ICRF J015218.06+220707.7  GC 0149+218    PKS 0149+21    PKS 0149+218   
+ICRF J015310.1-331025  0150-334            P 0150-334    PKS 0150-334              
+ICRF J015456.2+474326  0151+474                          B3 0151+47                
+
+ICRF J015537.0-404842  0153-410            P 0153-410    PKS 0153-410              
+ICRF J015734.9+744243  0153+744                          ICRF J015734.96+744243.2  0153+74        S5 0153+74     S5 0153+744    
+ICRF J020213.6-762003  0202-765                          MSH 01-71                 P 0202-76      PKS 0202-76    PKS 0202-765   
+ICRF J020333.3+723253  0159+723                          ICRF J020333.39+723253.7  0159+72        S5 0159+72     
+ICRF J020346.6+113445  0201+113            P 0201+113    PKS 0201+113              
+
+ICRF J020450.4+151411  0202+149            P 0202+14     4C 15.05                  PKS 0202+14    
+ICRF J020457.6-170119  0202-172            P 0202-17     PKS 0202-17               PKS 0202-172   
+ICRF J020504.9+321230  0202+319            DW 0202+31    ICRF J020504.93+321230.1  B2 0202+31     B2 0202+319    DW 0202+319    GC 0202+319    PKS 0202+319   
+ICRF J021046.2-510101  0208-512            P 0208-512    PKS 0208-512              
+ICRF J021730.8+734932  0212+735                          0212+73                   PKS 0212+735   S5 0212+73     S5 0212+735    S5 0212+73A    
+
+ICRF J021748.9+014449  0215+015                          ICRF J021748.95+014449.7  OD 026         PKS 0215+015   
+ICRF J022239.6+430207  0219+428                          ICRF J022239.61+430207.8  3C 66A         
+ICRF J022256.4-344128  0220-349            P 0220-349    ICRF J022256.40-344128.7  PKS 0220-349   
+ICRF J022428.4+065923  0221+067            GC 0221+06    PKS 0221+067              
+ICRF J022850.0+672103  0224+671  4C67.05   DW 0224+67    ICRF J022850.05+672103.0  4C +67.05      4C 67.05       
+
+ICRF J022934.9-784745  0230-790                          ICRF J022934.95-784745.6  P 0230-790     PKS 0230-790   
+ICRF J023145.8+132254  0229+131            P 0229+13     4C 13.14                  GC 0229+131    OD 148         PKS 0229+13    PKS 0229+131   
+ICRF J023752.4+284808  0234+285            CTD 20        4C 28.07                  B2 0234+28     B2 0234+285    GC 0234+285    OD 258         PKS 0234+285   
+ICRF J023838.9+163659  0235+164            GC 0235+16    ICRF J023838.93+163659.3  0236+164       AO 0235+16     AO 0235+164    GC 0235+164    OD 160         
+ICRF J023945.4-023440  0237-027            P 0237-027    PKS 0237-027              
+
+ICRF J023951.2+041621  0237+040            GC 0237+04    GC 0237+040               OD 062         PKS 0237+040   
+ICRF J024008.1-230915  0237-233            P 0237-23     OD 263                    PHL 8462       PKS 0237-23    PKS 0237-233   
+ICRF J024104.7-081520  0238-084  NGC1052   P 0238-084    NGC 1052                  PKS 0238-084   PKS 238-084    
+ICRF J024229.1+110100  0239+108            OD 166        ICRF J024229.17+110100.7  PKS 0239+108   
+ICRF J024457.6+622806  0241+622                          ICRF J024457.70+622806.5  4U 0241+61     4U 0241+62     
+
+ICRF J025134.5+431515  0248+430                          ICRF J025134.54+431515.8  GC 0248+43     GC 0248+430    S4 0248+43     S4 0248+430    
+ICRF J025246.1-710435  0252-712                                                    
+ICRF J025329.1-544151  0252-549            P 0252-549    PKS 0252-549              PKS 052-549    
+ICRF J025334.8+180542  0250+178            GC 0250+17                              
+ICRF J025927.0+074739  0256+075            OD 094.7      ICRF J025927.08+074739.6  PKS 0256+075   PKS 0259+07    
+
+ICRF J030230.5+121856  0259+121                                                    
+ICRF J030335.2+471616  0300+470            OE 400        4C 47.08                  
+ICRF J030350.6-621125  0302-623            P 0302-623    ICRF J030350.63-621125.5  PKS 0302-623   
+ICRF J030642.6+624302  0302+625                                                    
+ICRF J030903.6+102916  0306+102                          ICRF J030903.62+102916.3  OE 110         PKS 0306+102   
+
+ICRF J030956.0-605839  0308-611                          ICRF J030956.10-605839.1  P 0308-611     PKS 0308-611   
+ICRF J031155.2-765150  0312-770                          ICRF J031155.25-765150.8  P 0312-77      PKS 0312-77    PKS 0312-770   
+ICRF J031301.9+412001  0309+411                          ICRF J031301.96+412001.2  MW 0309+41     NRAO 128       S4 0309+41     
+ICRF J031948.1+413042  0316+413  3C84      3C 84         ICRF J031948.16+413042.1  NGC 1275       
+ICRF J031951.2+190131  0317+188            P 0317+188    PKS 0317+188              
+
+ICRF J032153.1+122113  0319+121            P 0319+12     OE 131                    PKS 0319+12    
+ICRF J032957.6+275615  0326+277  0326+278                ICRF J032957.67+275615.5  DW 0326+27     DW 0326+277    
+ICRF J033413.6-400825  0332-403            P 0332-403    PKS 0332-403              
+ICRF J033553.9-543025  0334-546                          P 0334-546                PKS 0334-546   
+ICRF J033630.1+321829  0333+321  NRAO140   NRAO 140      4C 32.14                  B2 0333+321    DA 107         HEAO 0333+321  OE 355         
+
+ICRF J033717.1+013722  0334+014                                                    
+ICRF J033930.9-014635  0336-019  CTA26     CTA 26        ICRF J033930.94-014635.8  DA 110         GC 0336-019    OE 063         PKS 0336-01    PKS 0336-019   
+ICRF J034035.6-211931  0338-214            P 0338-214    PKS 0338-214              
+ICRF J034423.1+155943  0341+158                                                    
+ICRF J034506.4+145349  0342+147                          ICRF J034506.42+145349.6  
+
+ICRF J035721.9-481215  0355-483                          P 0355-483                PKS 0355-483   
+ICRF J035929.7+505750  0355+508  NRAO150   NRAO 150      4C 50.11                  
+ICRF J040221.2-314725  0400-319            P 0400-319    PKS 0400-319              
+ICRF J040305.5+260001  0400+258            CTD 26        ICRF J040305.59+260001.5  0400+257       B2 0400+258    DW 0400+25     DW 0400+258    GC 0400+258    OF 200         PKS 0400+258   
+ICRF J040353.7-360501  0402-362            P 0402-362    PKS 0402-362              
+
+ICRF J040534.0-130813  0403-132            P 0403-13     PKS 0403-13               PKS 0403-132   
+ICRF J040659.0-382628  0405-385            P 0405-385    PKS 0405-385              
+ICRF J040748.4-121136  0405-123            P 0405-12     ICRF J040748.43-121136.7  HEAO 0405-123  MSH 04-12      OF 109         PKS 0405-12    PKS 0405-123   
+ICRF J040820.3+303230  0405+304  0405+305                ICRF J040820.38+303230.5  
+ICRF J040820.3-654509  0407-658                          PKS 0407-658              
+
+ICRF J040905.7-123848  0406-127                          OF 111                    P 0406-127     PKS 0406-127   
+ICRF J040922.0+121739  0406+121            GC 0406+12    ICRF J040922.01+121739.8  PKS 0406+121   
+ICRF J041636.5-185108  0414-189            P 0414-189    ICRF J041636.54-185108.3  MC 0414-189    PKS 0414-189   
+ICRF J042315.8-012033  0420-014            P 0420-01     ICRF J042315.80-012033.1  OA 129         OF 035         PKS 0420-01    PKS 0420-014   
+ICRF J042356.0+415002  0420+417            VRO 41.04.01                            
+
+ICRF J042442.2-375620  0422-380                          ICRF J042442.24-375620.8  PKS 0422-380   
+ICRF J042446.8+003606  0422+004            P 0422+00     ICRF J042446.84+003606.3  GC 0422+004    OF 038         PKS 0422+00    PKS 0422+004   
+ICRF J042636.6+051819  0423+051            P 0423+051    ICRF J042636.60+051819.9  PKS 0423+051   
+ICRF J042747.5+045708  0425+048            P 0425+048    PKS 0425+048              
+ICRF J042840.4-375619  0426-380            P 0426-380    ICRF J042840.42-375619.6  PKS 0426-380   
+
+ICRF J043221.1-510925  0431-512            P 0431-512    PKS 0431-512              
+ICRF J043311.0+052115  0430+052  3C120     3C 120        ICRF J043311.10+052115.6  BW Tau         
+ICRF J043701.4-184448  0434-188            P 0434-188    PKS 0434-188              
+ICRF J043900.8-452222  0437-454            P 0437-454    ICRF J043900.85-452222.6  PKS 0437-454   
+ICRF J044017.1-433308  0438-436            P 0438-43     PKS 0438-43               PKS 0438-436   
+
+ICRF J044238.6-001743  0440-003  NRAO190   NRAO 190      ICRF J044238.66-001743.4  DA 145         OF 067         PKS 0440-00    PKS 0440-003   
+ICRF J044331.6+344106  0440+345                                                    
+ICRF J044907.6+112128  0446+112            P 0446+11     ICRF J044907.67+112128.6  PKS 0446+11    
+ICRF J044923.3+633209  0444+634                          GC 0444+63                S4 0444+63     
+ICRF J045005.4-810102  0454-810            P 0454-81     ICRF J045005.44-810102.2  PKS 0454-81    PKS 0454-810   
+
+ICRF J045314.6-280737  0451-282            P 0451-28     PKS 0451-28               PKS 0451-282   PKS 0454-282   
+ICRF J045550.7-461558  0454-463            P 0454-46     PKS 0454-46               PKS 0454-463   
+ICRF J045703.1-232452  0454-234                          OF 292                    OF-292         PKS 0454-234   
+ICRF J045952.0+022931  0457+024            P 0457+024    ICRF J045952.05+022931.2  GC 0457+024    OF 097         PKS 0457+024   
+ICRF J050112.8-015914  0458-020            P 0458-02     4C 02.19                  DA 157         GC 0458-020    OA 141         OF 098         PKS 0458-02    PKS 0458-020   
+
+ICRF J050145.2+135607  0458+138            P 0458+138    ICRF J050145.27+135607.2  PKS 0458+138   
+ICRF J050215.4+060907  0459+060            GC 0459+06                              
+ICRF J050321.1+020304  0500+019                          OG 003                    
+ICRF J050401.7-604952  0503-608            P 0503-608    PKS 0503-608              
+ICRF J050523.1+045942  0502+049            P 0502+049    ICRF J050523.18+045942.7  PKS 0502+049   
+
+ICRF J050643.9-610940  0506-612            P 0506-61     ICRF J050643.99-610941.0  PKS 0506-61    PKS 0506-612   
+ICRF J050842.3+843204  0454+844                          ICRF J050842.36+843204.5  0454+84        S5 0454+84     S5 0454+844    
+ICRF J050927.4+101144  0506+101            P 0506+101    PKS 0506+101              
+ICRF J051002.3+180041  0507+179            P 0507+17     ICRF J051002.37+180041.6  PKS 0507+17    PKS 0507+179   
+ICRF J051349.1-215916  0511-220            P 0511-220    OG 220                    PKS 0511-220   
+
+ICRF J051637.7-723707  0517-726                                                    
+ICRF J051644.9-620705  0516-621                          ICRF J051644.93-620705.4  
+ICRF J052109.8+163822  0518+165  3C138     3C 138        ICRF J052109.89+163822.1  3C 138.0       3CR 138        4C 16.12       DA 170         NRAO 205       OG 130.2       PKS 0518+165   
+ICRF J052234.4-610757  0522-611            P 0522-611    PKS 0522-611              
+ICRF J052257.9-362730  0521-365            P 0521-36     ICRF J052257.98-362730.9  MSH 05-36      PKS 0521-36    PKS 0521-365   
+
+ICRF J052531.4-455754  0524-460            P 0524-460    PKS 0524-460              
+ICRF J052930.0-724528  0530-727            P 0530-728    ICRF J052930.04-724528.5  PKS 0530-728   
+ICRF J053007.9-250329  0528-250                          PKS 0528-250              
+ICRF J053056.4+133155  0528+134            P 0528+134    OG 147                    PKS 0528+134   
+ICRF J053238.9+073243  0529+075            OG 050                                  
+
+ICRF J053850.3-440508  0537-441            P 0537-441    ICRF J053850.36-440508.9  PKS 0537-441   
+ICRF J053932.0-155030  0537-158            P 0537-158    PKS 0537-158              
+ICRF J053942.3+143345  0536+145                                                    
+ICRF J053954.2-283955  0537-286                          ICRF J053954.28-283955.9  B1 0537-286    OG 263         OG-263         PKS 0537-286   
+ICRF J054138.0-054149  0539-057            P 0539-057    ICRF J054138.08-054149.4  PKS 0539-057   
+
+ICRF J054236.1+495107  0538+498  3C147     3C 147        ICRF J054236.14+495107.2  3C 147.0       3CR 147        4C 49.14       CTA 39         DA 186         NRAO 221       OG 465         
+ICRF J054734.1+272156  0544+273                          ICRF J054734.15+272156.8  
+ICRF J055530.8+394849  0552+398            DA 193        B2 0552+398               B2 0552+39A    B2 0552+39B    OA 198         PKS 0552+398   
+ICRF J055932.0+235353  0556+238                          ICRF J055932.03+235353.9  
+ICRF J060309.1+174216  0600+177                                                    
+
+ICRF J060752.6+672055  0602+673                          GC 0602+67                
+ICRF J060759.6-083449  0605-085            P 0605-08     OH 010                    PKS 0605-08    
+ICRF J060940.9-154240  0607-157            P 0607-15     MC 0607-157               PKS 0607-15    PKS 0607-157   
+ICRF J061357.6+130645  0611+131                                                    
+ICRF J061423.8+604621  0609+607                          ICRF J061423.87+604621.8  OH 617         
+
+ICRF J061635.9-345616  0614-349            P 0614-349    P 0614-34                 PKS 0614-34    PKS 0614-349   
+ICRF J061732.3-363414  0615-365            P 0615-365    PKS 0615-365              
+ICRF J062331.7-441302  0622-441            P 0622-441    PKS 0622-441              
+ICRF J062419.0+385648  0620+389                          OH 335                    S4 0620+389    
+ICRF J062603.0+820225  0615+820                          ICRF J062603.01+820225.6  0615+82        S5 0615+82     S5 0615+820    
+
+ICRF J063111.9-415426  0629-418                          ICRF J063112.00-415426.9  P 0629-418     PKS 0629-418   
+ICRF J063546.5-751616  0637-752            P 0637-75     ICRF J063546.51-751616.8  HEAO 0637-752  MC 0637-752    PKS 0637-75    PKS 0637-752   
+ICRF J063920.9-334600  0637-337            P 0637-337    PKS 0637-337              
+ICRF J064204.2+675835  0636+680                          ICRF J064204.26+675835.6  GC 0636+68     GC 0636+680    S4 0636+68     S4 0636+680    
+ICRF J064524.0+212151  0642+214  3C166     3C 166        3C 166.0                  4C 21.21       
+
+ICRF J064632.0+445116  0642+449            OH 471        ICRF J064632.03+445116.6  B3 0642+449    
+ICRF J064814.0-304419  0646-306            P 0646-306    PKS 0646-306              
+ICRF J064848.4-473427  0647-475            P 0647-475    PKS 0647-475              
+ICRF J065024.5-163739  0648-165                          ICRF J065024.58-163739.7  PKS 0648-165   
+ICRF J065358.2+370540  0650+371                          B2 0650+37                B2 0650+371    GC 0650+37     GC 0650+371    S4 0650+37     S4 0650+371    UT 0650+371    
+
+ICRF J070001.5+170921  0657+172                                                    
+ICRF J070134.5-463436  0700-465                          P 0700-465                PKS 0700-465   
+ICRF J071046.1+473211  0707+476                          ICRF J071046.10+473211.1  B3 0707+476    GC 0707+47     S4 0707+476    
+ICRF J071338.1+434917  0710+439            OI 417        S4 0710+43                
+ICRF J071424.8+353439  0711+356                          OI 318                    
+
+ICRF J072153.4+712036  0716+714                          ICRF J072153.45+712036.4  0716+71        S5 0716+71     S5 0716+714    
+ICRF J072516.8+142513  0722+145            P 0722+145    ICRF J072516.81+142513.7  4C 14.23       PKS 0722+145   
+ICRF J072550.6-005456  0723-008            DW 0723-00    ICRF J072550.64-005456.5  OI 039         PKS 0723-008   
+ICRF J072611.7+791131  0718+792  0718+793                ICRF J072611.74+791131.0  0718+79        
+ICRF J072905.4-363945  0727-365                                                    
+
+ICRF J073019.1-114112  0727-115            P 0727-11     PKS 0727-11               PKS 0727-115   
+ICRF J073545.8-173548  0733-174            P 0733-17     ICRF J073545.81-173548.5  PKS 0733-17    PKS 0733-174   
+ICRF J073807.3+174218  0735+178            P 0735+17     ICRF J073807.39+174219.0  DA 237         GC 0735+178    OI 158         PKS 0735+17    PKS 0735+178   VRO 17.07.02   
+ICRF J073816.9-332212  0736-332            P 0736-332    PKS 0736-332              
+ICRF J073856.4-673550  0738-674                          ICRF J073856.50-673550.8  PKS 0738-674   
+
+ICRF J073918.0+013704  0736+017            P 0736+01     OI 061                    PKS 0736+01    PKS 0736+017   
+ICRF J074110.7+311200  0738+313            OI 363        ICRF J074110.70+311200.2  B2 0738+31     B2 0738+313    DW 0738+313    GC 0738+313    
+ICRF J074202.7+490015  0738+491                                                    
+ICRF J074331.6-672625  0743-673                          P 0743-67                 PKS 0743-67    PKS 0743-673   
+ICRF J074533.0+101112  0742+103            DW 0742+10                              
+
+ICRF J074554.0-004417  0743-006            P 0743-006    4C 00.28                  OI 072         PKS 0743-006   
+ICRF J074625.8+254902  0743+259            GC 0743+25    ICRF J074625.87+254902.1  
+ICRF J074836.1+240024  0745+241            B2 0745+24    ICRF J074836.11+240024.1  B2 0745+241    OI 275         PKS 0745+241   
+ICRF J075052.0+123104  0748+126            P 0748+126    OI 280                    PKS 0748+126   
+ICRF J075301.3+535259  0749+540                          ICRF J075301.38+535259.6  4C 54.15       OI 582         S4 0749+54     
+
+ICRF J075706.6+095634  0754+100            P 0754+100    ICRF J075706.64+095634.9  OI 090.4       PKS 0754+100   
+ICRF J080815.5-075109  0805-077            P 0805-07     PKS 0805-07               PKS 0805-077   
+ICRF J080839.6+495036  0804+499            OJ 508        ICRF J080839.67+495036.5  GC 0804+49     GC 0804+499    S4 0804+49     S4 0804+499    
+ICRF J080856.6+405244  0805+410                          ICRF J080856.65+405244.9  B3 0805+410    GC 0805+41     UT 0805+410    
+ICRF J081108.8-492943  0809-493            P 0809-492    PKS 0809-492              PKS 0809-493   
+
+ICRF J081126.7+014652  0808+019            P 0808+019    DW 0808+019               OJ 014         PKS 0808+019   
+ICRF J081525.9+363515  0812+367                          ICRF J081525.94+363515.1  B2 0812+36     B2 0812+367    CSO 182        OJ 320         
+ICRF J081815.9+422245  0814+425            OJ 425        S4 0814+42                S4 0814+425    
+ICRF J082057.4-125859  0818-128            P 0818-128    ICRF J082057.45-125859.2  OJ 131         PKS 0818-128   
+ICRF J082447.2+555242  0820+560                          ICRF J082447.24+555242.7  4C 56.16A      4CP 56.16A     GC 0820+56     GC 0820+560    OJ 535         
+
+ICRF J082455.4+391641  0821+394                          ICRF J082455.48+391641.9  4C 39.23       B2 0821+39     B2 0821+394    GC 0821+39     GC 0821+394    LHE 226        OJ 336         
+ICRF J082526.8-501038  0823-500                          PKS 0823-500              
+ICRF J082538.6+615728  0821+621                          4CP 62.12                 4CP 62.12B     
+ICRF J082550.3+030924  0823+033            P 0823+033    MG 0825+0309              OJ 038         PKS 0823+03    PKS 0823+033   
+ICRF J082601.5-223027  0823-223            P 0823-223    PKS 0823-223              
+
+ICRF J082804.7-373106  0826-373                          ICRF J082804.78-373106.3  PKS 0826-373   
+ICRF J083052.0+241059  0827+243            B2 0827+24    AO 0827+243               B2 0827+243    OJ 248         
+ICRF J083148.8+042939  0829+046            MA 0829+04    ICRF J083148.88+042939.1  OJ 049         PKS 0829+046   
+ICRF J083223.2+491321  0828+493            OJ 448        ICRF J083223.22+491321.0  S4 0828+49     
+ICRF J083322.3-444138  0831-445  VELA-G                  Vel G                     
+
+ICRF J083454.9+553421  0831+557            4C 55.16      ICRF J083454.90+553421.1  
+ICRF J083520.6-451035  0833-450  VELA                    Vel A                     
+ICRF J083639.2-201659  0834-201            P 0834-20     ICRF J083639.22-201659.5  PKS 0834-20    PKS 0834-201   
+ICRF J083722.4+582501  0833+585                          ICRF J083722.41+582501.8  GC 0833+58     GC 0833+585    S4 0833+58     S4 0833+585    
+ICRF J084124.3+705342  0836+710            4C 71.07      S5 0836+71                S5 0836+710    
+
+ICRF J084127.0-754027  0842-754                          MC 0842-754               P 0842-75      PKS 0842-75    PKS 0842-754   
+ICRF J084205.0+183540  0839+187            GC 0839+18    ICRF J084205.09+183541.0  DW 0839+18     GC 0839+187    PKS 0839+187   UT 0839+187    
+ICRF J085441.9+575729  0850+581                          ICRF J085442.00+575729.9  4C 58.17       GC 0850+58     GC 0850+581    S4 0850+581    
+ICRF J085448.8+200630  0851+202  OJ287     OJ 287        ICRF J085448.87+200630.6  GC 0851+202    OB 287         PG 0851+202    PKS 0851+202   VRO 20.08.01   
+ICRF J090216.8-141530  0859-140            P 0859-14     MSH 09-11                 OJ 199         PKS 0859-14    PKS 0859-140   
+
+ICRF J090303.9+465104  0859+470            OJ 499        ICRF J090303.99+465104.1  4C 47.29       
+ICRF J090910.0+012135  0906+015            P 0906+01     4C 01.24                  DA 263         OK 011         PKS 0906+01    PKS 0906+015   
+ICRF J091437.9+024559  0912+029            P 0912+029    PKS 0912+029              
+ICRF J091552.4+293324  0912+297            B2 0912+29    ICRF J091552.40+293324.0  B2 0912+297    OK 222         
+ICRF J092058.4+444153  0917+449                          ICRF J092058.46+444154.0  GC 0917+44     S4 0917+44     S4 0917+449    
+
+ICRF J092129.3-261843  0919-260                          OK 232                    OK-232         PKS 0919-260   
+ICRF J092136.2+621552  0917+624                          ICRF J092136.23+621552.2  OK 630         S4 0917+62     S4 0917+624    S5 0917+62     
+ICRF J092246.4-395935  0920-397            P 0920-39     PKS 0920-39               PKS 0920-397   
+ICRF J092314.4+384939  0920+390                                                    
+ICRF J092703.0+390220  0923+392  4C39.25   4C 39.25      4C +39.25                 B2 0923+39     B2 0923+392    DA 267         OK 340         
+
+ICRF J092751.8-203451  0925-203            P 0925-203    PKS 0925-203              
+ICRF J093032.5-853359  0936-853                          P 0936-853                PKS 0936-853   
+ICRF J094855.3+403944  0945+408                          ICRF J094855.34+403944.6  4C 40.24       DA 273         OK 476         VRO 40.09.02   
+ICRF J095456.8+174331  0952+179            AO 0952+17    ICRF J095456.82+174331.2  0952+172       AO 0952+179    OK 186         PKS 0952+179   VRO 17.09.04   
+ICRF J095524.7+690113  0951+692  SN1993J                 SN 1993J                  
+
+ICRF J095533.1+690355  0951+693  M81       M 81          MESSIER 81                NGC 3031       
+ICRF J095649.8+251516  0953+254  OK290     OK 290        GC 0953+254               VRO 25.09.08   
+ICRF J095819.6+472507  0955+476                          ICRF J095819.67+472507.8  B3 0955+476    OK 492         S4 0955+47     
+ICRF J095820.9+322402  0955+326            3C 232        ICRF J095820.95+322402.2  4C 32.33       B2 0955+326    DA 279         NRAO 342       OK 393         TON 469        
+ICRF J095847.2+653354  0954+658                          ICRF J095847.25+653354.8  GC 0954+65     S4 0954+65     S4 0954+658    S4 0954+65A    
+
+ICRF J100159.9-443800  0959-443            P 0959-443    PKS 0959-443              
+ICRF J100614.0-501813  1004-500                                                    
+ICRF J100741.4+135629  1004+141            GC 1004+14    GC 1004+141               OL 108.1       PKS 1004+141   
+ICRF J101353.4+244916  1011+250                          B2 1011+25                B2 1011+250    GC 1011+250    TON 490        
+ICRF J101447.0+230116  1012+232                          ICRF J101447.07+230116.6  4C 23.24       OL 220         PKS 1011+23    P 1012+232     PKS 1012+232   
+
+ICRF J101725.8+611627  1014+615                                                    
+ICRF J102232.7-103744  1020-103            P 1020-103    ICRF J102232.80-103744.4  MSH 10-17      OL 133         PKS 1020-103   UT 1020-103    
+ICRF J102311.5+394815  1020+400                          ICRF J102311.57+394815.4  B2 1020+40     B3 1020+400    GC 1020+40     GC 1020+400    UT 1020+400    
+ICRF J102429.5-005255  1021-006            P 1021-00     PKS 1021-00               PKS 1021-006   
+ICRF J102444.8+191220  1022+194            GC 1022+19    4C 19.34                  OL 136         
+
+ICRF J103303.7+411606  1030+415                          ICRF J103303.71+411606.2  B3 1030+41     GC 1030+41     GC 1030+415    VRO 10.41.03   
+ICRF J103502.1-201134  1032-199            P 1032-199    ICRF J103502.16-201134.4  MC 1032-199    PKS 1032-199   
+ICRF J103507.0+562846  1031+567            OL 553        ICRF J103507.04+562846.8  S4 1031+56     
+ICRF J103716.0-293402  1034-293            P 1034-293    OL 259                    PKS 1034-293   
+ICRF J104117.1+061016  1038+064            OL 064.5      ICRF J104117.16+061016.9  4C 06.41       OTL 1038+064   
+
+ICRF J104142.9-474006  1039-474                                                    
+ICRF J104146.7+523328  1038+528  1038+52A                ICRF J104146.78+523328.2  OL 564         
+ICRF J104148.8+523355  1038+529  1038+52B                ICRF J104148.90+523355.6  1038+528       1038+528B      QSO 1038+528   
+ICRF J104244.6+120331  1040+123  3C245     3C 245        ICRF J104244.61+120331.3  3C 245.0       3CR 245        4C 12.37       AO 1040+123    DA 289         NRAO 358       OL 166.6       PKS 1040+123   
+ICRF J104423.0+805439  1039+811                          ICRF J104423.06+805439.4  1039+81        S5 1039+81     S5 1039+811    
+
+ICRF J104455.9+065538  1042+071            P 1042+071    PKS 1042+071              
+ICRF J104806.6-190935  1045-188                          MC 1045-188               P 1045-18      PKS 1045-18    
+ICRF J104827.6+714335  1044+719                          1044+71                   S5 1044+71     
+ICRF J105104.7-313814  1048-313            P 1048-313    PKS 1048-313              
+ICRF J105148.7+211952  1049+215            P 1049+21     ICRF J105148.79+211952.3  4C 21.28       OL 282         PKS 1049+21    PKS 1049+215   
+
+ICRF J105653.6+701145  1053+704                          1053+70                   S5 1053+70     
+ICRF J105811.5+811432  1053+815                          ICRF J105811.54+811432.7  1053+81        S5 1053+81     
+ICRF J105829.6+013358  1055+018            P 1055+01     4C 01.28                  DA 293         OL 093         PKS 1055+01    PKS 1055+018   
+ICRF J105843.3-800354  1057-797            P 1057-79     ICRF J105843.31-800354.2  PKS 1057-79    PKS 1057-797   
+ICRF J110331.5-325116  1101-325            P 1101-325    ICRF J110331.53-325116.7  CTS K15.03     PKS 1101-325   
+
+ICRF J110352.2-535700  1101-536                          P 1101-536                PKS 1101-536   
+ICRF J110427.3+381231  1101+384            B2 1101+38    ICRF J110427.31+381231.8  B2 1101+384    MARK 421       MKN 421        OM 303         
+ICRF J110708.6-444907  1104-445            P 1104-445    PKS 1104-445              
+ICRF J110712.6-682050  1105-680            P 1105-680    PKS 1105-680              
+ICRF J111358.6+144226  1111+149            GC 1111+14    ICRF J111358.70+144227.0  GC 1111+149    OM 118         PKS 1111+149   
+
+ICRF J111826.9-463415  1116-462                          P 1116-46                 PKS 1116-46    PKS 1116-462   
+ICRF J111857.3+123441  1116+128            P 1116+12     ICRF J111857.30+123441.7  4C 12.39       DA 299         DW 1116+128    OM 127         PKS 1116+12    PKS 1116+128   
+ICRF J112027.8+142054  1117+146                          4C 14.41                  P 1117+14      PKS 1117+14    
+ICRF J112553.7+261019  1123+264            P 1123+26     B2 1123+264               PB 2704        PKS 1123+26    PKS 1123+264   
+ICRF J112704.3-185717  1124-186            P 1124-186    PKS 1124-186              
+
+ICRF J112813.3+592514  1125+596                                                    
+ICRF J113007.0-144927  1127-145            P 1127-14     DW 1127-145               OM 146         PKS 1127-14    PKS 1127-145   
+ICRF J113053.2+381518  1128+385            GC 1128+38    ICRF J113053.28+381518.5  B3 1128+385    S4 1128+38     
+ICRF J113130.5-050019  1128-047            P 1128-047    PKS 1128-047              
+ICRF J113143.2-581853  1129-580                                                    
+
+ICRF J113320.0+004052  1130+009            P 1130+009    ICRF J113320.06+004052.8  PKS 1130+009   
+ICRF J114608.1-244732  1143-245            P 1143-245    ICRF J114608.10-244732.9  OM 272         PKS 1143-245   
+ICRF J114658.2+395834  1144+402                          B3 1144+402               GC 1144+40     S4 1144+40     
+ICRF J114701.3-381211  1144-379            P 1144-379    PKS 1144-379              
+ICRF J114751.5-072441  1145-071                          OM 076                    OM-076         PKS 1145-071   
+
+ICRF J115019.2+241753  1147+245            B2 1147+24    ICRF J115019.21+241753.8  B2 1147+245    GC 1147+245    OM 280         
+ICRF J115043.8-002354  1148-001            P 1148-00     4C 00.47                  DW 1148-001    OM 080         PKS 1148-00    PKS 1148-001   UM 458         
+ICRF J115113.4-672811  1148-671            P 1148-671    ICRF J115113.43-672811.1  PKS 1148-671   
+ICRF J115312.4+805829  1150+812                          ICRF J115312.50+805829.2  1150+81        S5 1150+81     S5 1150+812    
+ICRF J115324.4+493108  1150+497            4C 49.22      ICRF J115324.47+493108.8  BP 141         GB 1150+497    LB 2136        LHE 310        OM 484         
+
+ICRF J115825.7+245017  1155+251            GC 1155+25    ICRF J115825.79+245018.0  
+ICRF J115912.7-094052  1156-094            P 1156-094    PKS 1156-094              
+ICRF J115931.8+291443  1156+295            GC 1156+29    4C 29.45                  B2 1156+295    CTD 77         OM 295         TON 599        Ton 599        
+ICRF J120935.2-401613  1206-399                          PKS 1206-399              P 1207-399     PKS 1207-399   
+ICRF J121546.7-173145  1213-172            P 1213-17     PKS 1213-17               PKS 1213-172   
+
+ICRF J121555.6+344815  1213+350            4C 35.28      ICRF J121555.60+344815.2  GC 1213+35     GC 1213+350    
+ICRF J121752.0+300700  1215+303            B2 1215+30    ICRF J121752.08+300700.6  B2 1215+303    ON 325         
+ICRF J121806.2-460029  1215-457                          MC 1215-457               P 1215-45      PKS 1215-45    PKS 1215-457   
+ICRF J121906.4+482956  1216+487                          ICRF J121906.41+482956.2  ON 428         S4 1216+48     S4 1216+487    
+ICRF J122131.6+281358  1219+285            ON 231        B2 1219+285               GC 1219+285    VRO 28.12.02   W COM          W Com          
+
+ICRF J122222.5+041315  1219+044            P 1219+04     ICRF J122222.55+041315.8  4C 04.42       PKS 1219+04    PKS 1219+044   
+ICRF J122340.4+804004  1221+809                          ICRF J122340.49+804004.3  1221+80        S5 1221+80     S5 1221+809    
+ICRF J122452.4+033050  1222+037            P 1222+037    4C 03.23                  PKS 1222+037   
+ICRF J122454.3-831310  1221-829                          P 1221-82                 PKS 1221-82    PKS 1221-829   
+ICRF J122847.4+370612  1226+373                          ICRF J122847.42+370612.1  
+
+ICRF J122906.6+020308  1226+023  3C273B    3C 273        ICRF J122906.70+020308.6  2A 1226+023    3C 273.0       3C 273B        4C 02.32       4U 1226+023    DA 324         MSH 12+08      NRAO 400       ON 044         PG 1226+023    PKS 1226+02    PKS 1226+023   
+ICRF J123049.4+122328  1228+126  3C274     3C 274        NGC 4486                  Virgo A        
+ICRF J123715.2-504623  1234-504                                                    
+ICRF J123924.5+073017  1236+077            P 1236+077    ICRF J123924.59+073017.2  PKS 1236+077   
+ICRF J123943.0-102328  1237-101            P 1237-10     ON 162                    PKS 1237-10    PKS 1237-101   
+
+ICRF J123946.6-684530  1236-684            P 1236-684    ICRF J123946.65-684530.9  PKS 1236-684   
+ICRF J123959.4-113722  1237-113  M104      M 104         MESSIER 104               NGC 4594       
+ICRF J124251.3+375100  1240+381                          B2 1240+38                B2 1240+381    GC 1240+38     S4 1240+381    
+ICRF J124604.2-073046  1243-072                          ON 073                    ON-073         PKS 1243-072   
+ICRF J124646.8-254749  1244-255            P 1244-255    PKS 1244-255              
+
+ICRF J125359.5-405930  1251-407                          PKS 1251-407              
+ICRF J125438.2+114105  1252+119            P 1252+11     ICRF J125438.26+114105.9  MC2 1252+119   ON 187         PKS 1252+11    PKS 1252+119   
+ICRF J125459.9-713818  1251-713            P 1251-71     ICRF J125459.92-713818.4  PKS 1251-71    PKS 1251-713   
+ICRF J125611.1-054721  1253-055  3C279     3C 279        4C 05.55                  CTA 56         MSH 12-020     NRAO 413       ON 089         PKS 1253-055   
+ICRF J125614.2+565225  1254+571                          ICRF J125614.23+565225.2  MARK 231       
+
+ICRF J125759.0-315516  1255-316                          ON 392                    ON-392         PKS 1255-316   
+ICRF J130020.9+141718  1257+145            P 1257+145    ICRF J130020.92+141718.5  PKS 1257+145   
+ICRF J130252.4+574837  1300+580                          GC 1300+58                
+ICRF J130533.0-103319  1302-102            P 1302-102    ICRF J130533.02-103319.4  OP 106         PG 1302-102    PKS 1302-102   
+ICRF J130933.9+115424  1307+121                          4C 12.46                  MC 1307+121    MC2 1307+12    MC2 1307+121   OP 112         
+
+ICRF J131028.6+322043  1308+326            B2 1308+32    ICRF J131028.66+322043.8  AU CVn         B2 1308+326    CSO 836        GC 1308+326    OP 313         US 371         
+ICRF J131607.9-333859  1313-333            OP-322        OP 322                    PKS 1313-333   
+ICRF J131736.4+342515  1315+346  OP326     OP 326        ICRF J131736.49+342515.9  B2 1315+346    B2 1315+34A    GV 172         
+ICRF J132304.2-445233  1320-446            P 1320-446    P 1320-44                 PKS 1320-44    PKS 1320-446   
+ICRF J132527.6-430108  1322-427  CEN-A     P 1322-42     CEN A                     CENTAURUS A    NGC 5128       PKS 1322-42    
+
+ICRF J132616.5+315409  1323+321                          4C 32.44                  GC 1323+32     
+ICRF J132700.8+221050  1324+224                          ICRF J132700.86+221050.2  
+ICRF J133108.2+303032  1328+307  3C286     3C 286        3C 286.0                  3CR 286        4C 30.26       B2 1328+307    CTA 60         DA 346         NRAO 425       OP 348         
+ICRF J133237.5-664650  1329-665                                                    
+ICRF J133739.7-125724  1334-127            DW 1335-12    1335-127                  PKS 1334-127   PKS 1335-127   
+
+ICRF J133752.4-650924  1334-649            P 1334-649    PKS 1334-649              
+ICRF J134022.9+375443  1338+381                          ICRF J134022.95+375443.8  GB 1338+3809   
+ICRF J134345.9+660225  1342+662            GC 1342+662   ICRF J134345.96+660225.7  S4 1342+662    
+ICRF J134408.6+660611  1342+663            GC 1342+663   ICRF J134408.68+660611.6  S4 1342+663    
+ICRF J134733.3+121724  1345+125            P 1345+12     4C 12.50                  PKS 1345+12    
+
+ICRF J134934.6+534117  1347+539                          ICRF J134934.66+534117.0  4C 53.28       GC 1347+53     GC 1347+539    
+ICRF J135256.5-441240  1349-439            P 1349-439    PKS 1349-439              
+ICRF J135406.8-020603  1351-018            P 1351-018    PKS 1351-018              
+ICRF J135546.6-632642  1352-632                                                    
+ICRF J135704.4+191907  1354+195            P 1354+19     4C 19.44                  DA 354         OP 191         PKS 1354+19    PKS 1354+195   VRO 19.13.06   
+
+ICRF J135711.2-152728  1354-152            OP-192        OP 192                    PKS 1354-152   
+ICRF J135755.3+764321  1357+769                          1357+76                   
+ICRF J135900.1-415252  1355-416            P 1355-41     MSH 13-45                 PKS 1355-41    PKS 1355-416   
+ICRF J140445.8-013021  1402-012            P 1402-012    PKS 1402-012              UM 632         
+ICRF J140501.1+041535  1402+044            P 1402+044    PKS 1402+044              
+
+ICRF J140700.3+282714  1404+286  OQ208     OQ 208        ICRF J140700.39+282714.7  
+ICRF J140856.4-075226  1406-076            P 1406-076    OQ 010                    PKS 1406-076   
+ICRF J141154.8+213423  1409+218                                                    
+ICRF J141558.8+132023  1413+135            P 1413+135    PKS 1413+135              
+ICRF J141908.1+062834  1416+067                          ICRF J141908.18+062834.8  3C 298         3C 298.0       3CR 298        4C 06.49       DA 364         MSH 14+05      NRAO 441       OQ 027.7       PKS 1416+067   
+
+ICRF J141946.5+542314  1418+546            GC 1418+54    ICRF J141946.60+542314.8  CSO 633        GC 1418+546    OQ 530         OQ 530A        S4 1418+54     
+ICRF J141946.6+382148  1417+385                          B3 1417+385               UT 1417+385    
+ICRF J141959.2+270625  1417+273                          4C 27.28                  
+ICRF J142230.3+322310  1420+326                          B2 1420+32                B2 1420+326    OQ 334         
+ICRF J142700.3+234800  1424+240                          ICRF J142700.39+234800.0  PKS 1424+240   
+
+ICRF J142756.2-420619  1424-418            P 1424-41     PKS 1424-41               PKS 1424-418   
+ICRF J143257.6-180135  1430-178            OQ-151        MC 1430-178               OQ 151         PKS 1430-178   
+ICRF J143439.7+195200  1432+200                          PKS 1432+200              
+ICRF J143535.4+301224  1433+304                                                    
+ICRF J143645.8+633637  1435+638                          ICRF J143645.80+633637.9  GC 1435+63     S4 1435+63     
+
+ICRF J143809.4-220454  1435-218            P 1435-218    OQ 259                    PKS 1435-218   
+ICRF J144516.4+095836  1442+101  OQ172     OQ 172        ICRF J144516.47+095836.1  MC2 1442+101   PKS 1442+101   
+ICRF J144553.3-162901  1443-162                          P 1443-162                PKS 1443-162   
+ICRF J144815.0-162024  1445-161            P 1445-16     ICRF J144815.05-162024.5  PKS 1445-16    PKS 1445-161   
+ICRF J144828.7+760111  1448+762                          ICRF J144828.78+760111.6  1448+76        S5 1448+76     
+
+ICRF J145427.4-374733  1451-375            P 1451-375    PKS 1451-375              
+ICRF J145432.9-401232  1451-400                          P 1451-400                PKS 1451-400   
+ICRF J145907.5+714019  1458+718  3C309.1   3C 309.1      3CR 309.1                 4C 71.15       NRAO 464       PKS 1458+718   S5 1458+718    
+ICRF J150048.6+475115  1459+480                          ICRF J150048.65+475115.5  GC 1459+48     
+ICRF J150424.9+102939  1502+106            OR 103        4C 10.39                  MC2 1502+106   PKS 1502+106   
+
+ICRF J150506.4+032630  1502+036            P 1502+036    PKS 1502+036              
+ICRF J150609.5+373051  1504+377                          ICRF J150609.53+373051.1  B2 1504+37     B3 1504+377    OR 306         S4 1504+37     
+ICRF J150704.7-165230  1504-166            P 1504-167    MC 1504-166               OR 102         PKS 1504-166   PKS 1504-167   
+ICRF J151002.9+570243  1508+572                          GB 1508+5714              
+ICRF J151250.5-090559  1510-089            P 1510-08     PKS 1510-08               PKS 1510-089   
+
+ICRF J151344.8-101200  1511-100            P 1511-100    PKS 1511-10               PKS 1511-100   
+ICRF J151656.7+193212  1514+197            GC 1514+19    ICRF J151656.80+193213.0  GC 1514+197    PKS 1514+197   
+ICRF J151741.8-242219  1514-241            P 1514-24     ICRF J151741.81-242219.5  AP LIB         AP Lib         OR 225         PKS 1514-24    PKS 1514-241   
+ICRF J152237.6-273010  1519-273            P 1519-273    PKS 1519-273              
+ICRF J153452.4+013104  1532+016            P 1532+01     ICRF J153452.45+013104.2  PKS 1532+01    PKS 1532+016   
+
+ICRF J154049.4+144745  1538+149            GC 1538+14    ICRF J154049.49+144745.9  4C 14.60       OR 165         
+ICRF J154917.4+503805  1547+507                          ICRF J154917.47+503805.8  OR 580         S4 1547+50     
+ICRF J154929.4+023701  1546+027            P 1546+027    OR 078                    PKS 1546+027   
+ICRF J155035.2+052710  1548+056            DW 1548+05    4C 05.64                  PKS 1548+056   
+ICRF J155059.1-825806  1540-828            P 1540-82     PKS 1540-82               PKS 1540-828   
+
+ICRF J155658.8-791404  1549-790            P 1549-79     ICRF J155658.87-791404.3  PKS 1549-79    PKS 1549-790   
+ICRF J155751.4-000150  1555+001            DW 1555+00    DW 1555+001               P 1555+001     PKS 1555+001   
+ICRF J155821.9-140959  1555-140            P 1555-140    PKS 1555-140              
+ICRF J155930.9+030448  1557+032                          MG 1559+0305              
+ICRF J160140.4+431647  1600+432  1600+43A                1600+434                  
+
+ICRF J160140.5+431646  1600+431  1600+43B                                          
+ICRF J160207.2+332653  1600+335            B2 1600+33    ICRF J160207.26+332653.1  
+ICRF J160431.0-444131  1600-445                                                    
+ICRF J160734.7-333108  1604-333            P 1604-333    ICRF J160734.76-333108.9  PKS 1604-333   
+ICRF J160846.2+102907  1606+106            P 1606+10     ICRF J160846.20+102907.8  4C 10.45       PKS 1606+10    
+
+ICRF J160913.3+264129  1607+268  CTD93     CTD 93        PKS 1607+268              
+ICRF J161341.0+341247  1611+343            DA 406        ICRF J161341.06+341247.9  GC 1611+343    GV 273         LHE 403        OS 319         
+ICRF J161637.5+045932  1614+051            P 1614+051    PKS 1614+051              
+ICRF J161749.2-771718  1610-771            P 1610-77     PKS 1610-77               PKS 1610-771   
+ICRF J161903.6+061302  1616+063            DW 1616+06    ICRF J161903.69+061302.2  DW 1616+063    PKS 1616+063   
+
+ICRF J162418.4-680912  1619-680            P 1619-680    ICRF J162418.44-680912.5  PKS 1619-680   
+ICRF J162546.8-252738  1622-253            P 1622-253    PKS 1622-253              
+ICRF J162557.6+413440  1624+416                          ICRF J162557.67+413440.6  4C 41.32       DA 411         
+ICRF J162606.0-295126  1622-297            P 1622-29     PKS 1622-29               PKS 1622-297   
+ICRF J163515.4+380804  1633+382  1633+38   GC 1633+38    4C 38.41                  B2 1633+38     B2 1633+382    GC 1633+382    OS 356         
+
+ICRF J163813.4+572023  1637+574            P 1637+574    ICRF J163813.46+572024.0  GC 1637+57     GC 1637+574    OS 562         PKS 1637+574   S4 1637+57     S4 1637+574    
+ICRF J164029.6+394646  1638+398  NRAO512   NRAO 512      OS 264.4                  S4 1638+398    
+ICRF J164207.8+685639  1642+690                          ICRF J164207.85+685639.8  4C 69.21       GC 1642+69     GC 1642+690    
+ICRF J164258.8+394836  1641+399  3C345     3C 345        ICRF J164258.81+394837.0  3C 345.0       3CR 345        4C 39.18       4C 39.48       DA 420         LHE 413        NRAO 513       OS 368         
+ICRF J165039.5-294346  1647-296            P 1647-296    PKS 1647-296              
+
+ICRF J165352.2+394536  1652+398  DA426     DA 426        ICRF J165352.22+394536.6  4C 39.49       4U 1652+398    B2 1652+398    MARK 501       MKN 501        OS 387         
+ICRF J165801.4+344328  1656+348                          ICRF J165801.42+344328.4  B2 1656+34     B2 1656+348    GC 1656+34     GC 1656+348    OS 392         
+ICRF J165802.7+473749  1656+477                          1656+47                   S4 1656+47     S4 1656+477    
+ICRF J165809.0+074127  1655+077            OS 092        PKS 1655+077              
+ICRF J165833.4+051516  1656+053            DW 1656+05    DW 1656+053               OS 094         PKS 1656+053   
+
+ICRF J170053.1-261051  1657-261            P 1657-261    PKS 1657-261              
+ICRF J170717.7+453610  1705+456                          4C 45.34                  
+ICRF J170734.4+014845  1705+018            P 1705+018    ICRF J170734.42+014845.7  PKS 1705+018   
+ICRF J170934.3-172853  1706-174            OT-111        ICRF J170934.35-172853.4  1707-175       OT 111         
+ICRF J171913.0+174506  1717+178            GC 1717+17    GC 1717+178               OT 129         PKS 1717+177   PKS 1717+178   
+
+ICRF J172341.0-650036  1718-649            P 1718-649    ICRF J172341.03-650036.6  NGC 6328       PKS 1718-649   
+ICRF J172727.6+453039  1726+455                          ICRF J172727.65+453039.7  B3 1726+455    GC 1726+45     S4 1726+45     
+ICRF J172818.6+501310  1727+502                          ICRF J172818.62+501310.5  I ZW 187       II ZW 77       OT 546         
+ICRF J172824.9+042704  1725+044            P 1725+044    ICRF J172824.95+042704.9  PKS 1725+044   
+ICRF J173302.7-130449  1730-130  NRAO530   NRAO 530                                
+
+ICRF J173315.1-372232  1729-373                                                    
+ICRF J173420.5+385751  1732+389                          B3 1732+389               OT 355         S04 1732+389   S4 1732+389    
+ICRF J173549.0+504911  1734+508                          GC 1734+50                
+ICRF J173735.7-563403  1733-565                          P 1733-56                 PKS 1733-56    PKS 1733-565   
+ICRF J173927.3+495503  1738+499                          OT 463                    S4 1738+499    
+
+ICRF J173957.1+473758  1738+476            OT 465        S4 1738+47                
+ICRF J174036.9+521143  1739+522            4C 51.37      GC 1739+52                GC 1739+522    OT 566         
+ICRF J174358.8-035004  1741-038            P 1741-038    OT 068                    PKS 1741-03    PKS 1741-038   
+ICRF J174425.4-514443  1740-517            P 1740-517    PKS 1740-517              
+ICRF J174535.2+172001  1743+173            GC 1743+17    ICRF J174535.21+172001.4  PKS 1743+173   
+
+ICRF J174614.0+622654  1745+624                          ICRF J174614.03+622654.7  4C 62.29       
+ICRF J174726.6+465850  1746+470                                                    
+ICRF J174832.8+700550  1749+701                          ICRF J174832.84+700550.8  1748+701       S4 1749+70     S4 1749+701    S5 1749+70     S5 1749+701    W1 1749+701    
+ICRF J175132.8+093900  1749+096            OT 081        4C 09.57                  PKS 1749+096   
+ICRF J175151.2-252400  1748-253                                                    
+
+ICRF J175322.6+440945  1751+441                          ICRF J175322.65+440945.7  OT 486         OT 486.4       S4 1751+44     S4 1751+441    
+ICRF J175342.4+284804  1751+288            GC 1751+28                              
+ICRF J180024.7+384830  1758+388                          OT 398                    S4 1758+38     S4 1758+388    
+ICRF J180045.6+782804  1803+784                          ICRF J180045.68+782804.0  1803+78        S5 1803+78     S5 1803+784    
+ICRF J180132.3+440421  1800+440                          ICRF J180132.31+440421.9  B3 1800+44     B3 1800+440    OU 401         S4 1800+440    
+
+ICRF J180323.4-650736  1758-651            P 1758-651    ICRF J180323.50-650736.8  PKS 1758-651   
+ICRF J180650.6+694928  1807+698  3C371     3C 371        3C 371.0                  3CR 371        4C 69.24       NRAO 548       
+ICRF J180821.8+454220  1806+456                          GC 1806+45                GC 1806+456    S4 1806+45     S4 1806+456    
+ICRF J180957.8-455241  1806-458            P 1806-458    PKS 1806-458              
+ICRF J181935.0-634548  1814-637            P 1814-63     PKS 1814-63               PKS 1814-637   
+
+ICRF J181945.3-552120  1815-553            P 1815-554    PKS 1815-554              
+ICRF J182057.8-252812  1817-254                                                    
+ICRF J182314.1+793849  1826+796                                                    
+ICRF J182402.8+104423  1821+107            P 1821+10     MC2 1821+107              PKS 1821+10    PKS 1821+107   
+ICRF J182407.0+565101  1823+568                          ICRF J182407.07+565101.5  4C 56.27       4C 56.27A      GC 1823+56     
+
+ICRF J183250.1+283335  1830+285            GC 1830+28    ICRF J183250.19+283336.0  4C 28.45       B2 1830+285    B2 1830+28A    CTD 108        OU 251         VRO 28.18.01   
+ICRF J183537.2-714958  1829-718            P 1829-718    PKS 1829-718              
+ICRF J183728.7-710843  1831-711            P 1831-711    PKS 1831-711              
+ICRF J184208.9+794617  1845+797  3C390.3   3C 390.3      ICRF J184208.99+794617.1  4C 79.18       
+ICRF J184233.6+680925  1842+681                          ICRF J184233.64+680925.2  GC 1842+68     GC 1842+681    S4 1842+68     
+
+ICRF J184916.0+670541  1849+670                          ICRF J184916.07+670541.7  4C 66.20       GC 1849+67     S4 1849+67     
+ICRF J185457.2+735119  1856+737  1856+736                ICRF J185457.30+735119.9  S5 1856+73     
+ICRF J190255.9+315941  1901+319  3C395     3C 395        4C 31.52                  
+ICRF J191109.6-200655  1908-201            OV-213        OV 213                    PKS 1908-201   
+ICRF J191240.0-801005  1903-802            P 1904-80     ICRF J191240.02-801005.9  1904-802       P 1903-80      PKS 1903-80    PKS 1903-802   PKS 1904-80    PKS 1904-802   
+
+ICRF J192332.1-210433  1920-211            OV-235        OV 235                    
+ICRF J192451.0-291430  1921-293            OV-236        OV 236                    PKS 1921-293   
+ICRF J192559.6+210626  1923+210            OV 239.7      PKS 1923+210              
+ICRF J192748.4+735801  1928+738                          1928+73                   4C 73.18       S5 1928+738    
+ICRF J192840.8+084848  1926+087                                                    
+
+ICRF J193006.1-605609  1925-610                          P 1925-610                PKS 1925-6100  
+ICRF J193124.9+224331  1929+226                                                    
+ICRF J193435.0+104340  1932+106                                                    
+ICRF J193510.4+203154  1932+204                                                    
+ICRF J193716.2-395801  1933-400            P 1933-400    PKS 1933-400              
+
+ICRF J193925.0-634245  1934-638            P 1934-63     PKS 1934-63               PKS 1934-638   
+ICRF J193926.6-152543  1936-155            P 1936-15     PKS 1936-15               PKS 1936-155   
+ICRF J193957.2-100241  1937-101            P 1937-101    PKS 1937-101              
+ICRF J194025.5-690756  1935-692                          P 1935-692                PKS 1935-692   
+ICRF J194121.7-621121  1936-623            P 1936-623    PKS 1936-623              
+
+ICRF J194606.2+230004  1943+228                                                    
+ICRF J195330.8+353759  1951+355                                                    
+ICRF J195510.7-611519  1950-613            P 1950-613    PKS 1950-613              
+ICRF J195542.7+513148  1954+513                          ICRF J195542.74+513148.5  OV 591         PKS 1954+513   
+ICRF J195740.5+333827  1955+335                          ICRF J195740.55+333827.9  
+
+ICRF J195759.8-384506  1954-388            P 1954-388    ICRF J195759.82-384506.4  PKS 1954-388   
+ICRF J200057.0-174857  1958-179            OV-198        OV 198                    PKS 1958-179   
+ICRF J200324.1-325145  2000-330            P 2000-330    ICRF J200324.12-325145.1  PKS 2000-330   
+ICRF J200530.9+775243  2007+777                          2007+77                   S5 2007+77     S5 2007+777    
+ICRF J200617.6+642445  2005+642                                                    
+
+ICRF J200744.9+402948  2005+403                          2005+40                   TEX 2005+403   
+ICRF J200925.3-484953  2005-489            P 2005-489    ICRF J200925.39-484953.7  PKS 2005-489   
+ICRF J201114.2-064403  2008-068  OW-015                  ICRF J201114.22-064403.6  2011-067       OW 015         
+ICRF J201115.7-154640  2008-159            P 2008-159    PKS 2008-159              
+ICRF J201713.0+744047  2017+745  2017+743                ICRF J201713.08+744048.0  4C +74.25      4C 74.25       S5 2017+74     
+
+ICRF J202206.6+613658  2021+614            OW 637        S4 2021+61                
+ICRF J202319.0+315302  2021+317                          ICRF J202319.02+315302.3  4C 31.56       
+ICRF J202510.8+334300  2023+335  2023+336                                          
+ICRF J203147.9+545503  2030+547            OW 551        ICRF J203147.96+545503.1  4C 54.42       
+ICRF J203154.9+121941  2029+121            P 2029+121    ICRF J203154.99+121941.3  PKS 2029+121   
+
+ICRF J203837.0+511912  2037+511  3C418     3C 418        ICRF J203837.03+511912.7  3C 418.0       3CR 418        4C 51.42       NRAO 636       
+ICRF J204008.7-250746  2037-253            P 2037-253    PKS 2037-253              
+ICRF J205051.1+312727  2048+312  CL4                     ICRF J205051.13+312727.4  CL 4           CYGNUS LOOP 4  
+ICRF J205133.7+744140  2051+745                          ICRF J205133.73+744140.5  S5 2051+74     
+ICRF J205616.3-471447  2052-474            P 2052-47     ICRF J205616.36-471447.6  MC 2052-474    PKS 2052-47    PKS 2052-474   
+
+ICRF J205741.6-373402  2054-377                          PKS 2054-377              
+ICRF J210138.8+034131  2059+034            P 2059+034    ICRF J210138.83+034131.3  OW 098         PKS 2059+034   
+ICRF J210159.1-421916  2058-425                          P 2058-425                PKS 2058-425   
+ICRF J210217.0+470216  2100+468                          ICRF J210217.06+470216.3  
+ICRF J210544.9-782534  2059-786                          ICRF J210544.96-782534.5  P 2059-78      PKS 2059-78    PKS 2059-786   
+
+ICRF J210933.1-411020  2106-413            P 2106-413    ICRF J210933.19-411020.6  PKS 2106-413   
+ICRF J211529.4+293338  2113+293            B2 2113+29B   ICRF J211529.41+293338.4  B2 2113+29     
+ICRF J211630.8-805355  2109-811                          ICRF J211630.85-805355.2  P 2109-811     PKS 2109-811   
+ICRF J211810.5-301911  2115-305                          MSH 21-34                 OX 325         PKS 2115-30    PKS 2115-305   
+ICRF J212344.5+053522  2121+053            OX 036        GC 2121+053               PKS 2121+053   
+
+ICRF J212912.1-153841  2126-158            P 2126-15     PKS 2126-15               PKS 2126-158   
+ICRF J213032.8+050217  2128+048            P 2127+04     PKS 2127+04               
+ICRF J213135.2-120704  2128-123            P 2128-12     ICRF J213135.26-120704.8  OX 148         PHL 1598       PKS 2128-12    PKS 2128-123   
+ICRF J213410.3-015317  2131-021            P 2131-021    4C 02.81                  PKS 2131-021   
+ICRF J213638.5+004154  2134+004  2134+00   P 2134+004    DA 553                    GC 2134+004    OX 057         PHL 61         PKS 2134+004   
+
+ICRF J213901.3+142335  2136+141            OX 161        ICRF J213901.31+142336.0  PKS 2136+141   
+ICRF J214622.9-152543  2143-156            OX-173        ICRF J214622.98-152543.9  OX 173         PKS 2143-156   
+ICRF J214710.1+092946  2144+092            OX 074        PKS 2144+092              
+ICRF J214712.7-753613  2142-758                          P 2142-75                 PKS 2142-75    PKS 2142-758   
+ICRF J214805.4+065738  2145+067            P 2145+06     ICRF J214805.46+065738.6  4C 06.69       DA 562         OX 076.1       PKS 2145+06    PKS 2145+067   
+
+ICRF J215137.8+055212  2149+056            OX 082        PKS 2149+056              
+ICRF J215155.5-302753  2149-307  2149-306  P 2149-306    PKS 2149-306              PKS 2149-307   
+ICRF J215203.1-780706  2146-783                          ICRF J215203.15-780706.6  P 2146-78      PKS 2146-78    PKS 2146-783   
+ICRF J215224.8+173437  2150+173                          ICRF J215224.82+173437.8   P 2149+17     PKS 2149+17    PKS 2150+173   
+ICRF J215705.9-694123  2152-699                          PKS 2152-69               PKS 2153-69    
+
+ICRF J215806.2-150109  2155-152            OX-192        OX 192                    PKS 2155-152   
+ICRF J215852.0-301332  2155-304            P 2155-304    H 2155-304                PKS 2155-304   
+ICRF J220243.2+421639  2200+420  VR422201  VRO 42.22.01  ICRF J220243.29+421640.0  BL LAC         OY 401         
+ICRF J220314.9+314538  2201+315            B2 2201+31A   ICRF J220314.98+314538.3  4C 31.63       B2 2201+315    GC 2201+315    PKS 2201+315   
+ICRF J220743.7-534633  2204-540            P 2204-54     ICRF J220743.73-534633.8  PKS 2204-54    PKS 2204-540   
+
+ICRF J221205.9+235540  2209+236            P 2209+236    ICRF J221205.97+235540.5  PKS 2209+236   
+ICRF J221302.4-252930  2210-257            P 2210-25     PKS 2210-25               PKS 2210-257   
+ICRF J221438.5-383545  2211-388            P 2211-388    PKS 2211-388              
+ICRF J221620.0+351814  2214+350            GC 2214+35    B2 2214+35                B2 2214+350    GC 2214+350    UT 2214+350    
+ICRF J221852.0-033536  2216-038            P 2216-03     ICRF J221852.04-033536.9  4C 03.79       MSH 22-06      OY 027         PB 7136        PKS 2216-03    PKS 2216-038   
+
+ICRF J222547.2-045701  2223-052  3C446     3C 446        4C 05.92                  LHE 519        MSH 22-010     NRAO 687       OY 039         PKS 2223-052   
+ICRF J222940.0-083254  2227-088            P 2227-08     PHL 5225                  PKS 2227-08    PKS 2227-088   
+ICRF J223036.4+694628  2229+695                          ICRF J223036.47+694628.1  2229+69        S5 2229+69     
+ICRF J223040.2-394252  2227-399            P 2227-399    MD3:45                    PKS 2227-399   
+ICRF J223236.4+114350  2230+114  CTA102    CTA 102       4C 11.69                  DA 582         MC2 2230+114   OY 150         PKS 2230+114   
+
+ICRF J223513.2-483558  2232-488            P 2232-488    ICRF J223513.24-483558.8  PKS 2232-488   
+ICRF J223622.4+282857  2234+282            GC 2234+28    B2 2234+282               B2 2234+28A    CTD 135        
+ICRF J223634.0-143322  2233-148            P 2233-148    PKS 2233-148              
+ICRF J224618.2-120651  2243-123            OY-172.6      OY 172.6                  PB 7192        PKS 2243-123   
+ICRF J224838.6-323552  2245-328            P 2245-328    PKS 2245-328              
+
+ICRF J225357.7+160853  2251+158  3C454.3   3C 454.3      ICRF J225357.75+160853.6  3CR 454.3      4C 15.76       DA 586         MC3 2251+158   NRAO 701       OY 185         PKS 2251+158   
+ICRF J225504.2-084404  2252-090  2252-089  P 2252-089    PKS 2252-089              PKS 2252-090   
+ICRF J225536.7+420252  2253+417            GC 2253+41    B3 2253+417               GC 2253+417    OY 489         
+ICRF J225717.3+074312  2254+074            GC 2254+07    ICRF J225717.30+074312.3  OY 091         PKS 2254+074   
+ICRF J225717.5+024317  2254+024            P 2254+024    GC 2254+024               OY 091.3       PB 5195        PKS 2254+024   
+
+ICRF J225805.9-275821  2255-282            P 2255-282    PKS 2255-282              
+ICRF J230223.8-371806  2259-375            2259-374      PKS 2259-375              
+ICRF J230305.8-303011  2300-307            P 2300-307    PKS 2300-307              
+ICRF J230343.5-680737  2300-683                          ICRF J230343.57-680737.5  PKS 2300-683   
+ICRF J231409.3-445549  2311-452            P 2311-452    PKS 2311-452              
+
+ICRF J231448.5-313839  2312-319            P 2312-319    ICRF J231448.50-313839.5  PKS 2312-319   
+ICRF J232044.8+051349  2318+049            GC 2318+04    GC 2318+049               OZ 031         PB 5337        PKS 2318+049   
+ICRF J232159.8+273246  2319+272            B2 2319+27    ICRF J232159.86+273246.4  4C 27.50       
+ICRF J232225.9+505751  2320+506                          ICRF J232225.98+505752.0  OZ 533         
+ICRF J232331.9-031705  2320-035            P 2320-035    PHL 2278                  PKS 2320-035   
+
+ICRF J232747.9-144755  2325-150            P 2325-150    PKS 2325-150              
+ICRF J232917.7-473019  2326-477            P 2326-477    ICRF J232917.70-473019.1  PKS 2326-477   
+ICRF J233040.8+110018  2328+107            P 2328+10     4C 10.73                  GC 2328+107    MC2 2328+107   OZ 146.9       PKS 2328+10    PKS 2328+107   
+ICRF J233138.6-155657  2329-162            P 2329-16     ICRF J233138.65-155657.0  PKS 2329-16    PKS 2329-162   
+ICRF J233159.4-381147  2329-384            P 2329-384    ICRF J233159.48-381147.7  PKS 2329-384   
+
+ICRF J233355.2-234340  2331-240                          OZ 252                    OZ-252         PKS 2331-240   
+ICRF J233612.1-523621  2333-528            P 2333-528    PKS 2333-528              
+ICRF J233757.3-023057  2335-027            P 2335-027    PKS 2335-027              
+ICRF J234029.0+264156  2337+264            GC 2337+26    ICRF J234029.03+264156.8  
+ICRF J234636.8+093045  2344+092  2344+09A  P 2344+09     4C 09.74                  HIA 2344+092   OZ 073.5       PB 5532        PG 2344+092    PKS 2344+09    PKS 2344+092   
+
+ICRF J234802.6-163112  2345-167            P 2345-16     MC 2345-167               OZ 176         PKS 2345-16    PKS 2345-167   
+ICRF J235421.6+455304  2351+456                          ICRF J235421.68+455304.2  4C 45.51       OZ 486         
+ICRF J235430.1-151311  2351-154                          MC 2351-154               OZ 187         OZ-187         PKS 2351-154   
+ICRF J235509.4+495008  2352+495            DA 611                                  
+ICRF J235600.6-682003  2353-686            P 2353-68     2353-685                  PKS 2353-68    PKS 2353-685   PKS 2353-686   
+
+ICRF J235753.2-531113  2355-534            P 2355-534    PKS 2355-534              
+ICRF J235810.8-102008  2355-106            P 2355-106    PHL 600                   PKS 2355-106   UT 2355-106    
+ICRF J235933.1+385042  2356+385            GC 2356+38    B2 2357+38                
+
+</PRE>
+
+</BODY>
+</HTML>

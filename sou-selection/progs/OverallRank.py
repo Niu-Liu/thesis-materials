@@ -1,0 +1,51 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 29 15:57:09 2016
+
+ do a simple rank based on \mu_tol / \sigma_{\mu_tol}
+
+@author: Neo
+
+Oct 19, 2016: updated by Niu.
+"""
+
+import numpy as np
+import time
+
+# APM data file.
+apm = '../results/new_candidate4.apm'
+Sou = np.loadtxt(apm, usecols=(0,), dtype=str)
+V, V_RA, V_Dec, V_err, Va_E, Vd_E, RA, Dec\
+    = np.loadtxt(apm, usecols=list(range(1,9)), unpack=True)
+   
+dat = []
+for i in range(len(Sou)):
+    dat.append((Sou[i], V[i], V_err[i],\
+        RA[i], V_RA[i], Va_E[i], Dec[i], V_Dec[i],Vd_E[i], V[i]/V_err[i]))
+
+dtype = [('sou', 'S10'), ('u', float), ('u_e', float),\
+        ('alp', float), ('ua', float), ('ua_e', float),\
+        ('det', float), ('ud', float), ('ud_e', float), ('nu', float)]
+
+#dat = np.vstack((Sou, V, V_err, RA, V_RA, Va_E, Dec, V_Dec, Vd_E, V/V_err))
+a = np.array(dat, dtype=dtype) 
+s = 'nu'
+#s = 'u'       
+b = np.sort(a, order=[s])   
+
+## Output.
+res_dir = '../results/'
+res = 'OV.rank'
+fou = open(res_dir + res, 'w')
+print(time.strftime('## This list was generated at %Y-%m-%d %H:%M:%S',\
+    time.localtime(time.time())), file=fou)
+print('''## original file: %s, sorted by: %s
+## data format: Source  pm  e_pm  RA  pmRA  e_pmRA  De  pmDe  e_pmDE
+##   deg for positions and uas/yr for proper motions'''%(res, s), file=fou)   
+       
+for i in range(len(b)):
+    print(b[i][0] + "   %10.4f"*8\
+        %(b[i][1],b[i][2],b[i][3],b[i][4],b[i][5],b[i][6],b[i][7],b[i][8]), file=fou)
+
+fou.close()
+print('Done!')

@@ -1,0 +1,319 @@
+2016-11-17 11:21:36 Begins!
+: 2191/2191 entries are found. Completed!
+subset All: 
+Weighted: Normal.
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.062 \pm 0.016$    &$0.035 \pm 0.015$    &$0.021 \pm 0.016$
+   correlation coefficients are:
+[[ 1.         0.0858931 -0.1761398]
+ [ 0.0858931  1.        -0.0773926]
+ [-0.1761398 -0.0773926  1.       ]]
+subset defining: 
+Weighted: Normal.
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.031 \pm 0.029$    &$0.041 \pm 0.025$    &$-0.036 \pm 0.032$
+   correlation coefficients are:
+[[ 1.          0.03351088 -0.21853675]
+ [ 0.03351088  1.         -0.01850665]
+ [-0.21853675 -0.01850665  1.        ]]
+subset non-defining: 
+Weighted: Normal.
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.079 \pm 0.020$    &$0.031 \pm 0.018$    &$0.039 \pm 0.018$
+   correlation coefficients are:
+[[ 1.          0.10896128 -0.16268068]
+ [ 0.10896128  1.         -0.10037578]
+ [-0.16268068 -0.10037578  1.        ]]
+subset fixed-frame: 
+Weighted: Normal.
+the orientation/spin are(mas*yr-1):
+ :
+    &$-0.002 \pm 0.030$    &$0.008 \pm 0.025$    &$0.007 \pm 0.032$
+   correlation coefficients are:
+[[ 1.          0.03667811 -0.22384258]
+ [ 0.03667811  1.         -0.01569238]
+ [-0.22384258 -0.01569238  1.        ]]
+subset 260 fixed frame: 
+Weighted: Normal.
+the orientation/spin are(mas*yr-1):
+ :
+    &$-0.000 \pm 0.029$    &$-0.000 \pm 0.025$    &$-0.000 \pm 0.032$
+   correlation coefficients are:
+[[ 1.          0.03847287 -0.22177137]
+ [ 0.03847287  1.         -0.02193825]
+ [-0.22177137 -0.02193825  1.        ]]
+2016-11-17 11:21:36 Finished!
+2016-11-21 10:35:20 Begins!
+: 2191/2191 entries are found. Completed!
+2016-11-27 00:44:09 Begins!
+: 2191/2191 entries are found. Completed!
+subset All: 
+Weighted: Correlated.
+2016-11-27 00:44:27 Begins!
+: 2191/2191 entries are found. Completed!
+subset All: 
+Weighted: Correlated.
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.053 \pm 0.016$    &$0.026 \pm 0.014$    &$0.043 \pm 0.015$
+   correlation coefficients are:
+[[ 1.          0.05702434 -0.05469729]
+ [ 0.05702434  1.         -0.00254414]
+ [-0.05469729 -0.00254414  1.        ]]
+subset defining: 
+Weighted: Correlated.
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.040 \pm 0.029$    &$0.004 \pm 0.025$    &$-0.013 \pm 0.031$
+   correlation coefficients are:
+[[ 1.         -0.00477492 -0.06961281]
+ [-0.00477492  1.          0.07800469]
+ [-0.06961281  0.07800469  1.        ]]
+subset non-defining: 
+Weighted: Correlated.
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.060 \pm 0.020$    &$0.035 \pm 0.018$    &$0.060 \pm 0.018$
+   correlation coefficients are:
+[[ 1.          0.08544397 -0.05197647]
+ [ 0.08544397  1.         -0.03397804]
+ [-0.05197647 -0.03397804  1.        ]]
+subset fixed-frame: 
+Weighted: Correlated.
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.011 \pm 0.029$    &$-0.014 \pm 0.025$    &$0.016 \pm 0.032$
+   correlation coefficients are:
+[[  1.00000000e+00   8.90140341e-04  -7.46034930e-02]
+ [  8.90140341e-04   1.00000000e+00   8.18442497e-02]
+ [ -7.46034930e-02   8.18442497e-02   1.00000000e+00]]
+subset 260 fixed frame: 
+Weighted: Correlated.
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.010 \pm 0.029$    &$-0.023 \pm 0.025$    &$0.008 \pm 0.031$
+   correlation coefficients are:
+[[  1.00000000e+00   3.15775502e-04  -7.48161668e-02]
+ [  3.15775502e-04   1.00000000e+00   7.50670396e-02]
+ [ -7.48161668e-02   7.50670396e-02   1.00000000e+00]]
+2016-11-27 13:57:00 Begins!
+: 2191/2191 entries are found. Completed!
+subset All: 
+Weighted: Normal. Consider a bias in declination.
+the orientation are(mas):
+ :
+    &$0.075 \pm 0.016$    &$0.049 \pm 0.015$    &$0.018 \pm 0.016$
+the bias in declination(mas):
+ :
+    &$-0.123 \pm 0.013$
+   correlation coefficients are:
+[[ 1.          0.09346143 -0.17714801 -0.07911562]
+ [ 0.09346143  1.         -0.07906801 -0.10505326]
+ [-0.17714801 -0.07906801  1.          0.02017378]
+ [-0.07911562 -0.10505326  0.02017378  1.        ]]
+subset defining: 
+Weighted: Normal. Consider a bias in declination.
+the orientation are(mas):
+ :
+    &$0.042 \pm 0.029$    &$0.054 \pm 0.026$    &$-0.039 \pm 0.032$
+the bias in declination(mas):
+ :
+    &$-0.078 \pm 0.023$
+   correlation coefficients are:
+[[ 1.          0.04977326 -0.22000343 -0.11084506]
+ [ 0.04977326  1.         -0.022246   -0.15207011]
+ [-0.22000343 -0.022246    1.          0.02604582]
+ [-0.11084506 -0.15207011  0.02604582  1.        ]]
+subset non-defining: 
+Weighted: Normal. Consider a bias in declination.
+the orientation are(mas):
+ :
+    &$0.091 \pm 0.020$    &$0.044 \pm 0.018$    &$0.036 \pm 0.018$
+the bias in declination(mas):
+ :
+    &$-0.143 \pm 0.016$
+   correlation coefficients are:
+[[ 1.          0.11345923 -0.16336772 -0.06257787]
+ [ 0.11345923  1.         -0.10136281 -0.08100067]
+ [-0.16336772 -0.10136281  1.          0.01642401]
+ [-0.06257787 -0.08100067  0.01642401  1.        ]]
+subset fixed-frame: 
+Weighted: Normal. Consider a bias in declination.
+the orientation are(mas):
+ :
+    &$0.016 \pm 0.030$    &$0.029 \pm 0.026$    &$0.003 \pm 0.032$
+the bias in declination(mas):
+ :
+    &$-0.123 \pm 0.023$
+   correlation coefficients are:
+[[ 1.          0.05343757 -0.22539194 -0.11533265]
+ [ 0.05343757  1.         -0.01959929 -0.15106133]
+ [-0.22539194 -0.01959929  1.          0.02709287]
+ [-0.11533265 -0.15106133  0.02709287  1.        ]]
+subset 260 fixed frame: 
+Weighted: Normal. Consider a bias in declination.
+the orientation are(mas):
+ :
+    &$0.017 \pm 0.030$    &$0.020 \pm 0.026$    &$-0.005 \pm 0.032$
+the bias in declination(mas):
+ :
+    &$-0.121 \pm 0.023$
+   correlation coefficients are:
+[[ 1.          0.05401394 -0.22324297 -0.10924459]
+ [ 0.05401394  1.         -0.02558986 -0.14823461]
+ [-0.22324297 -0.02558986  1.          0.02631973]
+ [-0.10924459 -0.14823461  0.02631973  1.        ]]
+2016-12-10 21:04:29 Begins!
+: 2191/2191 entries are found. Completed!
+subset 260 fixed frame: 
+2016-12-10 21:06:39 Begins!
+: 2191/2191 entries are found. Completed!
+subset 260 fixed frame: 
+2016-12-10 21:26:44 Begins!
+: 2191/2191 entries are found. Completed!
+subset 260 fixed frame: 
+2016-12-10 21:27:17 Begins!
+: 2191/2191 entries are found. Completed!
+subset 260 fixed frame: 
+2016-12-10 21:27:31 Begins!
+: 2191/2191 entries are found. Completed!
+subset 260 fixed frame: 
+2017-01-25 20:50:24 Begins!
+2017-01-25 20:52:05 Begins!
+2017-01-25 21:41:32 Begins!
+## For Nouthern hemisphere:
+Number of the Sample: 1298
+Weighted: Normal. Orientation.
+the orientation/spin are(uas):
+ :
+     &$+131 \pm  20$    &$+72 \pm  19$    &$+102 \pm  21$
+   correlation coefficients are:
+ [[ 1.          0.06047445 -0.20372322]
+ [ 0.06047445  1.         -0.05109221]
+ [-0.20372322 -0.05109221  1.        ]]
+Weighted: Normal. Consider a bias in declination.
+the orientation/spin are(uas):
+ :
+     &$+138 \pm  20$    &$+111 \pm  19$    &$+99 \pm  21$
+the bias in declination(mas):
+ :
+     &$-140 \pm  17$
+   correlation coefficients are:
+ [[ 1.          0.06890746 -0.2042799  -0.04191342]
+ [ 0.06890746  1.         -0.05404001 -0.24721373]
+ [-0.2042799  -0.05404001  1.          0.01837278]
+ [-0.04191342 -0.24721373  0.01837278  1.        ]]
+## For Southern hemisphere:
+Number of the Sample: 893
+Weighted: Normal. Orientation.
+the orientation/spin are(uas):
+ :
+     &$-84 \pm  28$    &$-26 \pm  23$    &$-85 \pm  24$
+   correlation coefficients are:
+ [[ 1.          0.12580554 -0.13671969]
+ [ 0.12580554  1.         -0.11331823]
+ [-0.13671969 -0.11331823  1.        ]]
+Weighted: Normal. Consider a bias in declination.
+the orientation/spin are(uas):
+ :
+     &$-64 \pm  28$    &$-41 \pm  24$    &$-85 \pm  24$
+the bias in declination(mas):
+ :
+     &$-113 \pm  21$
+   correlation coefficients are:
+ [[ 1.          0.10934907 -0.13624003 -0.12976979]
+ [ 0.10934907  1.         -0.1120091   0.11251168]
+ [-0.13624003 -0.1120091   1.          0.00522674]
+ [-0.12976979  0.11251168  0.00522674  1.        ]]
+## For All sources:
+Number of the Sample: 2191
+Weighted: Normal. Orientation.
+the orientation/spin are(uas):
+ :
+     &$+62 \pm  16$    &$+35 \pm  15$    &$+21 \pm  16$
+   correlation coefficients are:
+ [[ 1.          0.08589302 -0.17613978]
+ [ 0.08589302  1.         -0.07739264]
+ [-0.17613978 -0.07739264  1.        ]]
+Weighted: Normal. Consider a bias in declination.
+the orientation/spin are(uas):
+ :
+     &$+75 \pm  16$    &$+49 \pm  15$    &$+18 \pm  16$
+the bias in declination(mas):
+ :
+     &$-123 \pm  13$
+   correlation coefficients are:
+ [[ 1.          0.09346137 -0.17714799 -0.07911579]
+ [ 0.09346137  1.         -0.07906805 -0.10505332]
+ [-0.17714799 -0.07906805  1.          0.02017382]
+ [-0.07911579 -0.10505332  0.02017382  1.        ]]
+2017-01-25 21:42:41 Begins!
+## For Nouthern hemisphere:
+Number of the Sample: 1298
+Weighted: Normal. Orientation.
+the orientation/spin are(uas):
+ :
+     &$+131 \pm  20$    &$+72 \pm  19$    &$+102 \pm  21$
+   correlation coefficients are:
+ [[ 1.          0.06047445 -0.20372322]
+ [ 0.06047445  1.         -0.05109221]
+ [-0.20372322 -0.05109221  1.        ]]
+Weighted: Normal. Consider a bias in declination.
+the orientation/spin are(uas):
+ :
+     &$+138 \pm  20$    &$+111 \pm  19$    &$+99 \pm  21$
+the bias in declination(mas):
+ :
+     &$-140 \pm  17$
+   correlation coefficients are:
+ [[ 1.          0.06890746 -0.2042799  -0.04191342]
+ [ 0.06890746  1.         -0.05404001 -0.24721373]
+ [-0.2042799  -0.05404001  1.          0.01837278]
+ [-0.04191342 -0.24721373  0.01837278  1.        ]]
+## For Southern hemisphere:
+Number of the Sample: 893
+Weighted: Normal. Orientation.
+the orientation/spin are(uas):
+ :
+     &$-84 \pm  28$    &$-26 \pm  23$    &$-85 \pm  24$
+   correlation coefficients are:
+ [[ 1.          0.12580554 -0.13671969]
+ [ 0.12580554  1.         -0.11331823]
+ [-0.13671969 -0.11331823  1.        ]]
+Weighted: Normal. Consider a bias in declination.
+the orientation/spin are(uas):
+ :
+     &$-64 \pm  28$    &$-41 \pm  24$    &$-85 \pm  24$
+the bias in declination(mas):
+ :
+     &$-113 \pm  21$
+   correlation coefficients are:
+ [[ 1.          0.10934907 -0.13624003 -0.12976979]
+ [ 0.10934907  1.         -0.1120091   0.11251168]
+ [-0.13624003 -0.1120091   1.          0.00522674]
+ [-0.12976979  0.11251168  0.00522674  1.        ]]
+## For All sources:
+Number of the Sample: 2191
+Weighted: Normal. Orientation.
+the orientation/spin are(uas):
+ :
+     &$+62 \pm  16$    &$+35 \pm  15$    &$+21 \pm  16$
+   correlation coefficients are:
+ [[ 1.          0.08589302 -0.17613978]
+ [ 0.08589302  1.         -0.07739264]
+ [-0.17613978 -0.07739264  1.        ]]
+Weighted: Normal. Consider a bias in declination.
+the orientation/spin are(uas):
+ :
+     &$+75 \pm  16$    &$+49 \pm  15$    &$+18 \pm  16$
+the bias in declination(mas):
+ :
+     &$-123 \pm  13$
+   correlation coefficients are:
+ [[ 1.          0.09346137 -0.17714799 -0.07911579]
+ [ 0.09346137  1.         -0.07906805 -0.10505332]
+ [-0.17714799 -0.07906805  1.          0.02017382]
+ [-0.07911579 -0.10505332  0.02017382  1.        ]]

@@ -1,0 +1,344 @@
+$SETUP
+  DEFAULTS                      NO
+  SOLUTION                      COMPLETE
+  CGM                           NONE 
+  MERGE_CGM                     NONE
+  ARC_FILES                     NONE
+  ID                            2018b
+  TRAIN                         NO GLO_PARLIM 2560 INC_PARLIM 256
+  SORT                          YES STATIONS ALPHABET SOURCES RIGHT_ASCENSION
+  USER_PROGRAM                  NONE
+  USER_PARTIALS                 NONE
+  USER_CONSTRAINTS              NONE
+  FAST_MODE                     B1B3D
+  FAST_DBG                      MONITOR
+  FAST_COV                      SEGMENTED
+  WEIGHTS                       IN
+  SAVING_RATE                   5
+  SUPMET                        PRE98
+  QUALCODE_LIMIT                5
+  WARNING                       NO
+  SINGULARITY_CHECK             ACTION REPARAMETERIZE STAMIN 8 SOUMIN 1 BASMIN 3
+  SOURCE_WEIGHTS                NO
+  APRIORI_OBS_CORR              NO
+  ELEVATION_DEPENDENT_NOISE     NO
+  EMULATION                     0
+$OUTPUT
+  RESET                         YES
+  FORWARD                       NO
+  BASELINES                     YES
+  MINIMUM                       NO
+  SCREEN                        NO
+  COVARIANCES                   NO
+  CORRELATIONS                  NO
+  STATION_TABLE                 NO
+  POS_ELLIPSES                  NO
+  MOD_FILES                     NO
+  RESIDUALS                     NONE
+  MINIMIZE_SIGMAS               YES 
+  SINEX                         NO
+  NORMAL_MATRIX                 NO 
+  SEG_OUTPUT                    NO
+  MAPPED_EOP_OUTPUT             NO
+  APRIORI_ZENDEL                YES
+  CRES_EMULATION                NO
+  NRD_TABLE                     YES
+  CHI_SQUARE_TABLE              NO
+$FLAGS
+  ATMOSPHERES                   AUTO 20
+  CLOCKS                        AUTO 60
+  GRADIENTS                     YES   6
+  UT1/PM                        POLYNOMIAL OFFSET XYU RATE XYU 2ND_ORDER --- MIDDLE
+  NUTATION                      XY_OFFSET
+  BASELINE_CLOCKS               IN
+  STATIONS                      YES REF_EPOCH 2010.01.01
+  VELOCITIES                    YES
+*
+* -- Reference epoch set as J2015.5 as GaiaDR2
+*
+  SOURCES                       YES REF_EPOCH 2015.07.01
+  PROPER_MOTIONS                NO
+  HI_FREQ_EOP                   NO
+  PRECESSION                    NO
+  RELATIVITY                    NO
+  AXIS                          YES
+  HARMONIC_POS                  NO
+  SPLINE_POS \
+*
+* -- Stations showing nonlinear displacements
+*
+    STATION HRAS_085 DEGREE 3 \
+     NODE 1980.04.11            MULT 3 \
+     NODE 1983.01.01            MULT 0 \
+     NODE 1984.01.01            MULT 0 \
+     NODE 1984.07.01            MULT 0 \
+     NODE 1985.03.01            MULT 0 \
+     NODE 1985.05.15            MULT 0 \
+     NODE 1985.07.15            MULT 0 \
+     NODE 1986.01.01            MULT 0 \
+     NODE 1986.07.01            MULT 0 \
+     NODE 1987.01.01            MULT 0 \
+     NODE 1987.07.01            MULT 0 \
+     NODE 1988.01.01            MULT 0 \
+     NODE 1988.07.01            MULT 0 \
+     NODE 1989.01.01            MULT 0 \
+     NODE 1991.06.05            MULT 0 \
+     CNS_STA_SIGMA              1.0D-3 \
+     CNS_VEL_SIGMA              1.0D-3 \
+     CNS_DER_SIGMA    0         0.0D0  \
+     CNS_DER_SIGMA    1         0.0D0  \
+     CNS_DER_SIGMA    2         0.0D0  \
+*
+    STATION PIETOWN  DEGREE 2 \
+     NODE 1991.05.01            MULT 2 \
+     NODE 1993.03.01            MULT 0 \
+     NODE 1996.01.01            MULT 0 \
+     NODE 1998.01.01            MULT 0 \
+     NODE 2000.01.01            MULT 0 \
+     NODE 2002.01.01            MULT 0 \
+     NODE 2004.01.01            MULT 0 \
+     NODE 2007.09.01            MULT 0 \
+     CNS_STA_SIGMA              1.0D-3 \
+     CNS_VEL_SIGMA              1.0D-3 \
+     CNS_DER_SIGMA    0         0.0D0  \
+     CNS_DER_SIGMA    1         0.0D0  \
+     CNS_DER_SIGMA    2         0.0D0  \
+*
+    STATION GILCREEK DEGREE 2 \
+     NODE 1984.07.01            MULT 2 \
+     NODE 1990.01.01            MULT 0 \
+     NODE 1997.01.01            MULT 0 \
+     NODE 2001.06.01            MULT 0 \
+     NODE 2002.11.03_22:12:42   MULT 2 \
+     NODE 2003.02.01            MULT 0 \
+     NODE 2004.03.01            MULT 0 \
+     NODE 2006.01.01            MULT 0 \
+     CNS_STA_SIGMA              1.0D-3 \
+     CNS_VEL_SIGMA              1.0D-3 \
+     CNS_DER_SIGMA    0         0.0D0  \
+     CNS_DER_SIGMA    1         0.0D0  \
+     CNS_DER_SIGMA    2         0.0D0
+*
+$CARRY
+  SOURCES                       YES EXCEPT \
+*
+* -- Sources showing strong nonlinear displacements
+*
+     0014+813 0235+164 0637-752 0738+313 1308+326 1448+762 2145+067 3C120    \
+     1610-771 0208-512 0438-436 0451-282 0919-260 0607-157 2243-123 NGC1052  \
+     2128-123 3C279    0106+013 2134+00  1021-006 3C273B   0528+134 2121+053 \
+     0202+149 3C454.3  1611+343 OQ208    2201+315 2234+282 OK290    4C39.25  \
+     3C345    0711+356 3C84     1739+522 1044+719 0212+735 3C309.1
+*
+  STATIONS                      YES
+  AXIS                          YES
+$DATA
+  SOURCES                       YES EXCEPT \
+*
+* -- Radio stars
+*
+     0236+610 0459-753 1612+339 0334+004 0323+285 1458-083 \
+*
+* -- Known gravitational lenses
+*
+     0218+35A 0218+35B 0218+357 1422+231 1830-21A 1830-21B 1830-211 0132-097
+*
+  STATIONS                      YES EXCEPT \
+*
+* -- Stations used for polarization or backend tests
+*
+     NOTOX    WIDE85_3 VLBA85_3 MOJAVLBA LEFT85_1 HARTDBBC YEBESDBC YEBDBBC \
+     ONSALAAN YEBEDBBC OHIGGADS WETTDBBC LEFTKOK  LEFT85_3 NYALDBBC HOBADBBC 
+*
+  TYPE                          GROUP_DELAYS_ONLY
+  ELEVATION                     5
+  WVR_MASK                      NO
+  EVERY                         NO
+  NORATE_FLAG                   NO
+$CALIBRATIONS
+  ION                           ON 
+  RESET                         YES
+  KEEP                          cable
+  KEEP                          pcal_rmv
+  DISABLE                       NMFDRFLY
+$CONTRIBUTIONS
+  SET                           WobXCont
+  SET                           WobYCont
+  SET                           EarthTid
+  SET                           Pol_Tide
+  SET                           Feed_Rot
+  SET                           XpYpOrth
+  SET                           UT1Ortho
+  SET                           XpYpLib
+  SET                           UT1Libra
+  SET                           OPTLCont
+$MODE_CALIBRATIONS
+  SET                           NONE
+$PARTIALS
+  SET                           NMFWTFLY OFF
+$MAPPING
+  STATIONS                      /home/oper/traitement/itrf2014.sit
+  VELOCITIES                    /home/oper/traitement/itrf2014.vel
+  EARTHQUAKE                    /home/oper/traitement/itrf2014.psd
+*
+* -- 2820 ICRF optical-counterpart position in Gaia DR2  
+*
+* SOURCES                       /home/oper/traitement/icrf2.src
+  SOURCES                       /home/nliu/traitement/gaiadr2.src
+  EARTH_ORIENTATION             /home/oper/traitement/c04.erp
+  NUTATION_SERIES               NONE
+  NUTATION2006                  NO
+  GALACTIC_ABERRATION           5.6
+  EPISODIC_MOTION               /home/oper/traitement/episodic.esm
+  ECCENTRICITY                  /home/oper/traitement/ECCDAT.ecc
+  HI_FREQ_EOP                   NONE
+  PRESSURE_LOADING              NONE
+  PIECE_WISE_STA                NONE
+  AXIS_OFFSET	                /home/oper/traitement/gsfc_itrf2013.axo
+  MEAN_GRADIENT                 /home/oper/traitement/gsfc_dao_gmao.mgr
+  METRIC_TENSOR                 NONE
+  POSITION_VARIATIONS           /home/oper/traitement/fes2004.hps HMD SPL AVL \
+                                /home/oper/outils/aplo/bds/ TSR SPL AVL \
+                                /home/oper/outils/aplo/vsgd_aplo_s1_s2_noib.hps HMD SPL AVL
+  ANTENNA_THERMAL               MODEL INSTANT /home/oper/traitement/antenna-info.txt INSITU NONE
+  EXTERNAL_TRP_DELAY            REQUIRE DIRECTORY /home/oper/outils/vmf1/trp
+$CONSTRAINTS
+  ATMOSPHERES                   YES 50.0
+  CLOCKS                        YES  5.0
+  GRADIENTS                     YES  0.5 2.0
+  BASELINE_CLOCKS               YES SIGMA 5.D-7
+  EARTH_ORIENTATION             YES SIGMA 45.0 45.0 3.0 RATES SIGMA 45.0 45.0 3.0
+  NUTATION                      NO
+  PIECE_WISE_STA                NO
+  STATIONS                      XYZ YES SIGMA 10.0 10.0 10.0 UEN NO
+  VELOCITIES                    XYZ  NO                                                \
+                                UEN  NO   SIGMA   0.1    3.0  3.0
+  NUVEL_COVAR                   NO
+  SOURCES                       YES SIGMA 1.D-6
+  NO_NET_TRANSLATION            NO
+  NO_NET_TRANSLATION_POSITION   GLOBAL SIGMA 1.D-3 ALL UNIFORM RIGHT_PART 0.0 0.0 0.0 NO EXCEPT \
+*
+     ALGOPARK BR-VLBA  DSS45    FD-VLBA  FORTLEZA HARTRAO  HATCREEK HAYSTACK \
+     HN-VLBA  HOBART26 -ASHIM34 KASHIMA  KAUAI    KOKEE    KP-VLBA  LA-VLBA  \
+     MATERA   -K-VLBA  NL-VLBA  NOTO     NRAO20   NRAO85_3 NYALES20 ONSALA60 \
+     OV-VLBA  OVRO_130 PIETOWN  RICHMOND SANTIA12 SC-VLBA  SESHAN25 -SUKUB32 \
+     VNDNBERG WESTFORD WETTZELL SVETLOE  YEBES40M HOBART12 KATH12M  YARRA12M \
+     WARK12M
+*
+  NO_NET_ROTATION_POSITION      GLOBAL SIGMA 1.D-3     UNIFORM RIGHT_PART 0.0 0.0 0.0 NO EXCEPT \
+*
+     ALGOPARK BR-VLBA  DSS45    FD-VLBA  FORTLEZA HARTRAO  HATCREEK HAYSTACK \
+     HN-VLBA  HOBART26 -ASHIM34 KASHIMA  KAUAI    KOKEE    KP-VLBA  LA-VLBA  \
+     MATERA   -K-VLBA  NL-VLBA  NOTO     NRAO20   NRAO85_3 NYALES20 ONSALA60 \
+     OV-VLBA  OVRO_130 PIETOWN  RICHMOND SANTIA12 SC-VLBA  SESHAN25 -SUKUB32 \
+     VNDNBERG WESTFORD WETTZELL SVETLOE  YEBES40M HOBART12 KATH12M  YARRA12M \
+     WARK12M
+*
+  NO_NET_TRANSLATION_VELOCITY   GLOBAL SIGMA 1.D-3 ALL UNIFORM RIGHT_PART 0.0 0.0 0.0 NO EXCEPT \
+*
+     ALGOPARK BR-VLBA  DSS45    FD-VLBA  FORTLEZA HARTRAO  HATCREEK HAYSTACK \
+     HN-VLBA  HOBART26 -ASHIM34 KASHIMA  KAUAI    KOKEE    KP-VLBA  LA-VLBA  \
+     MATERA   -K-VLBA  NL-VLBA  NOTO     NRAO20   NRAO85_3 NYALES20 ONSALA60 \
+     OV-VLBA  OVRO_130 PIETOWN  RICHMOND SANTIA12 SC-VLBA  SESHAN25 -SUKUB32 \
+     VNDNBERG WESTFORD WETTZELL SVETLOE  YEBES40M HOBART12 KATH12M  YARRA12M \
+     WARK12M
+*
+  NO_NET_ROTATION_VELOCITY      GLOBAL SIGMA 1.D-3     UNIFORM RIGHT_PART 0.0 0.0 0.0 NO EXCEPT \
+*
+     ALGOPARK BR-VLBA  DSS45    FD-VLBA  FORTLEZA HARTRAO  HATCREEK HAYSTACK \
+     HN-VLBA  HOBART26 -ASHIM34 KASHIMA  KAUAI    KOKEE    KP-VLBA  LA-VLBA  \
+     MATERA   -K-VLBA  NL-VLBA  NOTO     NRAO20   NRAO85_3 NYALES20 ONSALA60 \
+     OV-VLBA  OVRO_130 PIETOWN  RICHMOND SANTIA12 SC-VLBA  SESHAN25 -SUKUB32 \
+     VNDNBERG WESTFORD WETTZELL SVETLOE  YEBES40M HOBART12 KATH12M  YARRA12M \
+     WARK12M
+*
+  NO_NET_ROTATION_SOURCE        GLOBAL SIGMA 1.D-10    UNIFORM NO EXCEPT \
+*
+* -- The 295 defining sources of the ICRF2
+*
+*     0002-478 IIIZW2   0008-264 0010+405 0013-005 0016+731 0019+058 0035+413 \
+*     0048-097 0048-427 0059+581 0104-408 0107-610 0109+224 0110+495 0116-219 \
+*     0119+115 0131-522 0133+476 0134+311 0138-097 0151+474 0159+723 0202+319 \
+*     0215+015 0221+067 0230-790 0229+131 0234-301 0235-618 0234+285 0237-027 \
+*     0300+470 0302-623 0302+625 0306+102 0308-611 0307+380 0309+411 0322+222 \
+*     0332-403 0334-546 0342+147 0346-279 0358+210 0402-362 0403-132 0405-385 \
+*     0414-189 0420-014 0422+004 0426+273 0430+289 0437-454 0440+345 0446+112 \
+*     0454-810 0454-234 0458-020 0458+138 0506-612 0454+844 0506+101 0507+179 \
+*     0516-621 0515+208 0522-611 0524-460 0524-485 0524+034 0529+483 0534-611 \
+*     0534-340 0537-441 0536+145 0537-286 0544+273 0549-575 0552+398 0556+238 \
+*     0600+177 0642+449 0646-306 0648-165 0656+082 0657+172 0707+476 0716+714 \
+*     0722+145 0718+793 0727-115 0736+017 0738+491 0743-006 0743+259 0745+241 \
+*     0748+126 0759+183 0800+618 0805+046 0804+499 0805+410 0808+019 0812+367 \
+*     0814+425 0823+033 0827+243 0834-201 OJ287    0854-108 0912+029 0920-397 \
+*     0920+390 0925-203 0949+354 0955+476 0955+326 0954+658 1004-500 1012+232 \
+*     1013+054 1014+615 1015+359 1022-665 1022+194 1030+415 1030+074 1034-374 \
+*     1034-293 1038+52A 1039+811 1042+071 1045-188 1049+215 1053+815 1055+018 \
+*     1101-536 1101+384 1111+149 1123+264 1124-186 1128+385 1130+009 1133-032 \
+*     1143-696 1144+402 1144-379 1145-071 1147+245 1149-084 1156-663 1156+295 \
+*     1213-172 1215+303 1219+044 1221+809 1226+373 1236+077 1240+381 1243-072 \
+*     1244-255 1252+119 1251-713 1300+580 1308+328 1313-333 1324+224 1325-558 \
+*     1334-127 1342+662 1342+663 1349-439 1351-018 1354-152 1357+769 1406-076 \
+*     1418+546 1417+385 1420-679 1423+146 1424-418 1432+200 1443-162 1448-648 \
+*     1451-400 1456+044 1459+480 1502+106 1502+036 1504+377 1508+572 1510-089 \
+*     1511-100 1514+197 1520+437 1519-273 1546+027 1548+056 1555+001 1554-643 \
+*     1557+032 1604-333 1606+106 1611-710 1614+051 1617+229 1619-680 1622-253 \
+*     1624-617 1637+574 NRAO512  1639+230 1642+690 1633-810 1657-261 1657-562 \
+*     1659-621 1705+018 1706-174 1717+178 1726+455 NRAO530  1725-795 1732+389 \
+*     1738+499 1738+476 1741-038 1743+173 1745+624 1749+096 1751+288 1754+155 \
+*     1758+388 1803+784 1800+440 1758-651 1806-458 1815-553 1823+689 1823+568 \
+*     1824-582 1831-711 1842+681 1846+322 1849+670 1908-201 1920-211 1921-293 \
+*     1925-610 1929+226 1933-400 1936-155 1935-692 1954+513 1954-388 1958-179 \
+*     2000+472 2002-375 2008-159 2029+121 2052-474 2059+034 2106+143 2106-413 \
+*     2113+293 2123-463 2126-158 2131-021 2136+141 2142-758 2150+173 2204-540 \
+*     2209+236 2220-351 3C446    2227-088 2229+695 2232-488 2236-572 2244-372 \
+*     2245-328 2250+194 2254+074 2255-282 2300-683 2318+049 2326-477 2333-415 \
+*     2344-514 2351-154 2353-686 2355-534 2355-106 2356+385 2357-318
+* ---
+* -- use all 2820 sources
+* ---
+*
+$SUPPRESSION
+  VELOCITY_TIE                          \
+          DSS15     DSS13               \
+     AND  BADARY    BADAR13M            \
+     AND  DSS45     TIDBIN64            \
+     AND  DSS65     DSS65A    ROBLED32  \
+     AND  FORTORDS  FORT_ORD            \
+     AND  GIFU11    GIFU3               \
+     AND  GGAO7108  GORF7102            \
+     AND  HARTRAO   HART15M             \
+     AND  HRAS_085  FTD_7900            \
+     AND  HOBART26  HOBART12            \
+     AND  KASHIM34  KASHIM11 KASHIMA    \
+     AND  KAUAI     HALEAKAL            \
+     AND  KOGANEI   KOGANEI3            \
+     AND  METSAHOV  METSHOVI            \
+     AND  MIZNAO10  MIZUSGSI  VERAMZSW  \
+     AND  MOJAVE12  MOJ_7288            \
+     AND  NRAO20    GBT-VLBA  NRAO_140  NRAO85_1  NRAO85_3   \
+     AND  ONSALA60  MV2ONSLA  ONSALA85  \
+     AND  OVRO_130  OVR_7853            \
+     AND  RICHMOND  MIAMI20             \
+*    AND  SESHAN25  TIANMA65            \
+     AND  SINTOTU   SINTOTU3            \
+     AND  TSUKUB32  TSUKU3    TSUKUBA   \
+     AND  PIETOWN   VLA-N8              \
+     AND  WETTZELL  WETTZ13N  TIGOWTZL  \
+     AND  YEBES40M  YEBES     RAEGYEB   \
+     AND  YLOW7296  YELLOWKN            \
+     AND  ZELENCHK  ZELEN13M
+  VELOCITIES                    NO
+  STATIONS                      NO
+  RIGHT_ASCENSION               NO  
+  DECLINATION                   NO  
+  STATION_ORIGIN                NO
+  SOURCES                       NO
+  PROPER_MOTIONS                NO
+  PRECESSION                    NO
+  RELATIVITY                    NO
+  DIRECTION                     NO
+  VELOCITY_ORIGIN               NO
+  STATION_TIE                   NO
+  SUPPRESS_FILE                 NONE
+$ARCS
+  ARCFILE                       opa2018a.arc

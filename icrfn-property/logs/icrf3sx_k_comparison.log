@@ -1,0 +1,83 @@
+# apriori statistics (weighted)
+#         mean for RA:      0.014 mas
+#         wrms for RA:      0.493 mas
+#          std for RA:      0.492 mas
+#        mean for Dec:      0.076 mas
+#        wrms for Dec:      1.347 mas
+#         std for Dec:      1.344 mas
+
+# apriori reduced Chi-square for:     31.150
+# posteriori statistics  of vsh01 fit (weighted)
+#         mean for RA:      0.012 mas
+#          rms for RA:      0.492 mas
+#          std for RA:      0.492 mas
+#        mean for Dec:      0.059 mas
+#         rms for Dec:      1.344 mas
+#         std for Dec:      1.342 mas
+
+# posteriori reduced Chi-square for:     30.960
+# goodness-of-fit is      0.000
+# apriori statistics (weighted)
+#         mean for RA:      0.014 mas
+#         wrms for RA:      0.493 mas
+#          std for RA:      0.492 mas
+#        mean for Dec:      0.076 mas
+#        wrms for Dec:      1.347 mas
+#         std for Dec:      1.344 mas
+
+# apriori reduced Chi-square for:     31.150
+# posteriori statistics of vsh02 fit (weighted)
+#         mean for RA:      0.012 mas
+#          rms for RA:      0.490 mas
+#          std for RA:      0.489 mas
+#        mean for Dec:      0.059 mas
+#         rms for Dec:      1.341 mas
+#         std for Dec:      1.339 mas
+
+# posteriori reduced Chi-square for:     30.769
+# goodness-of-fit is      0.000
+Estimates (   793 sources)
+--------------------------------------------------------------------------------------------
+               Rotation [uas]                                   Glide [uas]               
+               x             y             z               x             y             z
+--------------------------------------------------------------------------------------------
+l_max=1   -22 +/-   6   -33 +/-   6    +1 +/-   4     +13 +/-   5   +30 +/-   5   +25 +/-   6
+l_max=2   -15 +/-   7   -17 +/-   7    +8 +/-   4     -17 +/-   6   +51 +/-   7   +26 +/-   7
+--------------------------------------------------------------------------------------------
+
+Quadrupolar term Estimate Error
+---------------- -------- -----
+            ER22       -2     3
+            EI22       -3     3
+            ER21      -34     7
+            EI21      -71     8
+             E20        7     8
+            MR22        2     4
+            MI22      -11     4
+            MR21       15     8
+            MI21      -32     8
+             M20      -26     5
+Correlation coefficient between parameters in 'l_max=1' fit
+          R1    R2    R3    D1    D2
+    R2  +0.0
+    R3  -0.0  +0.0
+    D1  +0.1  +0.4  -0.1
+    D2  -0.4  +0.1  -0.0  +0.0
+    D3  +0.1  +0.0  -0.2  +0.0  +0.0
+Correlation coefficient between parameters in 'l_max=2' fit
+          R1    R2    R3    D1    D2    D3  E22R  E22I  E21R  E21I   E20  M22R  M22I  M21R  M21I
+    R2  +0.0
+    R3  -0.0  +0.0
+    D1  +0.0  +0.6  +0.0
+    D2  -0.6  +0.0  +0.0  -0.0
+    D3  -0.0  +0.0  -0.2  +0.0  +0.0
+  E22R  +0.0  -0.1  +0.0  -0.1  +0.0  +0.0
+  E22I  +0.0  -0.0  +0.0  -0.0  +0.0  +0.0  +0.0
+  E21R  +0.4  +0.1  +0.0  +0.0  -0.1  -0.1  -0.0  +0.0
+  E21I  +0.1  -0.4  -0.0  -0.1  +0.0  -0.0  +0.1  +0.0  -0.0
+   E20  -0.0  +0.0  -0.5  -0.1  -0.0  +0.1  -0.0  -0.0  -0.0  -0.0
+  M22R  +0.0  +0.0  -0.0  +0.0  -0.0  +0.0  +0.1  -0.2  +0.0  +0.0  -0.0
+  M22I  +0.0  -0.1  -0.0  +0.0  +0.0  -0.0  +0.3  +0.1  +0.0  +0.1  -0.0  +0.0
+  M21R  +0.0  +0.7  +0.0  +0.6  -0.1  +0.0  -0.0  -0.0  -0.0  -0.3  +0.0  -0.0  -0.0
+  M21I  +0.6  -0.0  +0.0  -0.1  -0.5  -0.1  -0.0  -0.1  +0.3  -0.0  -0.0  +0.1  -0.0  +0.0
+   M20  +0.0  -0.0  +0.1  -0.0  +0.0  -0.3  +0.0  +0.0  -0.0  +0.0  -0.1  -0.0  +0.0  -0.0  -0.0

@@ -1,0 +1,49 @@
+2016-11-21 23:28:33 Begins!
+subset All :
+Weighted: Normal.
+the spin are(uas*yr-1):
+ :
+    &$0.774 \pm 0.027$    &$-0.167 \pm 0.026$    &$0.200 \pm 0.025$
+   correlation coefficients are:
+[[ 1.          0.03326234 -0.05335648]
+ [ 0.03326234  1.         -0.02650251]
+ [-0.05335648 -0.02650251  1.        ]]
+from J2000.0-2015.0, the cumulative orientation are(uas):
+ :
+    &$11.605 \pm 0.407$    &$-2.499 \pm 0.392$    &$3.002 \pm 0.382$
+subset defining :
+Weighted: Normal.
+the spin are(uas*yr-1):
+ :
+    &$-0.052 \pm 0.076$    &$-0.173 \pm 0.075$    &$0.338 \pm 0.077$
+   correlation coefficients are:
+[[ 1.          0.02663042 -0.07619666]
+ [ 0.02663042  1.          0.00722705]
+ [-0.07619666  0.00722705  1.        ]]
+from J2000.0-2015.0, the cumulative orientation are(uas):
+ :
+    &$-0.785 \pm 1.141$    &$-2.601 \pm 1.119$    &$5.069 \pm 1.153$
+subset Non-defining :
+Weighted: Normal.
+the spin are(uas*yr-1):
+ :
+    &$0.894 \pm 0.029$    &$-0.164 \pm 0.028$    &$0.185 \pm 0.027$
+   correlation coefficients are:
+[[ 1.          0.03406799 -0.05033563]
+ [ 0.03406799  1.         -0.03091523]
+ [-0.05033563 -0.03091523  1.        ]]
+from J2000.0-2015.0, the cumulative orientation are(uas):
+ :
+    &$13.404 \pm 0.435$    &$-2.465 \pm 0.418$    &$2.782 \pm 0.405$
+subset 260 fixed frame: 
+Weighted: Normal.
+the orientation/spin are(uas*yr-1):
+ :
+    &$-0.029 \pm 0.076$    &$-0.164 \pm 0.075$    &$0.315 \pm 0.077$
+   correlation coefficients are:
+[[ 1.          0.02864789 -0.07894433]
+ [ 0.02864789  1.          0.00695544]
+ [-0.07894433  0.00695544  1.        ]]
+from J2000.0-2015.0, the cumulative orientation are(uas):
+ :
+    &$-0.437 \pm 1.147$    &$-2.462 \pm 1.125$    &$4.721 \pm 1.155$

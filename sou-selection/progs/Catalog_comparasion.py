@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr 26 15:20:29 2016
+
+@author: neo
+"""
+
+#cat1 = 'new_candidate2.cat'
+#cat1 = 'icrf1.cat'
+cat1 = '331_sou.cat'
+cat2 = 'icrf2.cat'
+#cat3 = 'MFV247.cat'
+#cat4 = 'AMS260.cat'
+
+#cat  = 'common_source.cat'
+#fcat = open('../catalog/'+cat,'w')
+
+#cat1  = 'common_source.cat'
+f1 = open('../catalog/'+cat1,'r')
+sou1 = f1.readlines()
+
+#cat2 = '352_sou.cat'
+f2 = open('../catalog/'+cat2,'r')
+sou2 = f2.readlines()
+
+#f3 = open('../catalog/'+cat3,'r')
+#sou3 = f3.readlines()
+#
+#f4 = open('../catalog/'+cat4,'r')
+#sou4 = f4.readlines()
+
+f1.close()
+f2.close()
+#f3.close()
+#f4.close()
+
+com = [ sou1[i].strip('\n') for i in range(len(sou1)) if sou1[i] in sou2 \
+#    and sou1[i] in sou3 and sou1[i] in sou4]
+    ]
+print(len(com))
+#for i in range(len(com)):
+#    print>>fcat, com[i]
+#fcat.close()

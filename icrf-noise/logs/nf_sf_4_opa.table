@@ -1,0 +1,24 @@
+Table. Nosie floor and scale factor for OPA solution
+s   -> scale factor
+f   -> noise floor
+rho -> position offset
+-------------------------------------------------------------------------------------------------------------
+Method  Source          s_RA   +/-   f_RA   +/-   post-inflation   s_Dec   +/-   f_Dec   +/-   post-inflation
+        selection                    (mas) (mas)  scale factor     (mas)  (mas)                scale factor
+-------------------------------------------------------------------------------------------------------------
+DSM1    rho < 1.0 mas   1.482  -     0.031  -       0.912          1.283   -     0.033   -      0.883
+        rho/err < 5
+        
+DSM2    rho < 0.5 mas   1.382  -     0.024  -       0.993          1.234   -     0.027   -      0.934   
+        rho/err < 5
+        
+DSM3    rho < 0.1 mas   1.356  -     0.014  -       1.047          1.308   -     0.017   -      0.923   
+        rho/err < 5
+        
+LLZ     rho < 1.0 mas   1.364 0.013  0.006 0.001    1.073          1.376 0.028   0.012 0.001    0.899
+        rho/err < 5
+        N_sess > 100
+        
+SBL     rho < 1.0 mas   1.518 0.031  0.019 0.014    0.925          1.282 0.043   0.026 0.014    0.906
+        rho/err < 5
+        err < 0.2 mas

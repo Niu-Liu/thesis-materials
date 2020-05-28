@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Apr 29 22:58:34 2016
+
+@author: neo
+"""
+
+import numpy as np
+import os
+
+#url='http://ivsopar.obspm.fr/radiosources/series/' # website of database.
+url='http://ivsopar.obspm.fr/radiosources/images/'
+##ICRF2 defining sources data file
+dat_dir = '../data/'
+icrf2f = 'icrf2-defining.dat'
+souname = np.loadtxt(dat_dir+icrf2f, dtype=str, skiprows=20, usecols=(2,))
+dat_dir='../plot/OPA/'
+
+for i in range(souname.size):
+    sou = souname[i]
+
+    for k in range(len(sou)):
+        if '0'<= sou[0] <='2' and sou[4]=='+':
+                soun = sou[:4]+'%2B'+sou[5:]
+        else:
+                soun = sou
+                    
+    com='wget -q -N -O '+dat_dir+sou+'.png '+url+soun+'.png'
+    os.system(com)
+    print 'Plots for '+sou+' are Downloaded successfully.'
+
+print 'Download data completely.'

@@ -1,0 +1,178 @@
+%% file: template.tex = LaTeX template for article-like report 
+%% init: sometime 1993
+%% last: Feb  8 2015  Rob Rutten  Deil
+%% site: http://www.staff.science.uu.nl/~rutte101/rrweb/rjr-edu/manuals/student-report/
+
+%% First read ``latex-bibtex-simple-manual.txt'' at
+%% http://www.staff.science.uu.nl/~rutte101/Report_recipe.html
+
+%% Start your report production by copying this file into your XXXX.tex.
+%% Small changes to the header part will make it an A&A or ApJ manuscript.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[onecolumn]{aa}   %% Astronomy & Astrophysics style class
+
+\usepackage{graphicx,natbib,url,twoopt}
+\usepackage[varg]{txfonts}           %% A&A font choice
+\usepackage{hyperref}                %% for pdflatex
+%%\usepackage[breaklinks]{hyperref}  %% for latex+dvips
+%%\usepackage{breakurl}              %% for latex+dvips
+\usepackage{pdfcomment}              %% for popup acronym meanings
+\usepackage{acronym}                 %% for popup acronym meanings
+
+\hypersetup{
+  colorlinks=true,   %% links colored instead of frames
+  urlcolor=blue,     %% external hyperlinks
+  linkcolor=red,     %% internal latex links (eg Fig)
+}
+
+\bibpunct{(}{)}{;}{a}{}{,}    %% natbib cite format used by A&A and ApJ
+
+\pagestyle{plain}   %% undo the fancy A&A pagestyle 
+
+%% Add commands to add a note or link to a reference
+\makeatletter
+\newcommand{\bibnote}[2]{\@namedef{#1note}{#2}}
+\newcommand{\biblink}[2]{\@namedef{#1link}{#2}}
+\makeatother
+
+%% Commands to make citations ADS clickers and to add such also to refs
+%% May 2014: they give error stops ("Illegal parameter number ..."}
+%%   for plain latex with TeX Live 2013; the ad-hoc fixes added below let
+%%   latex continue instead of stop within these commands.
+%%   Please let me know if you know a better fix!
+%%   No such problem when using pdflatex.
+\makeatletter
+ \newcommandtwoopt{\citeads}[3][][]{%
+   \nonstopmode%              %% fix to not stop at error message in latex
+   \href{http://adsabs.harvard.edu/abs/#3}%
+        {\def\hyper@linkstart##1##2{}%
+         \let\hyper@linkend\@empty\citealp[#1][#2]{#3}}%   %% Rutten, 2000
+   \biblink{#3}{\href{http://adsabs.harvard.edu/abs/#3}{ADS}}%
+   \errorstopmode}            %% fix to resume stopping at error messages 
+ \newcommandtwoopt{\citepads}[3][][]{%
+   \nonstopmode%              %% fix to not stop at error message in latex
+   \href{http://adsabs.harvard.edu/abs/#3}%
+        {\def\hyper@linkstart##1##2{}%
+         \let\hyper@linkend\@empty\citep[#1][#2]{#3}}%     %% (Rutten 2000)
+   \biblink{#3}{\href{http://adsabs.harvard.edu/abs/#3}{ADS}}%
+   \errorstopmode}            %% fix to resume stopping at error messages
+ \newcommandtwoopt{\citetads}[3][][]{%
+   \nonstopmode%              %% fix to not stop at error message in latex
+   \href{http://adsabs.harvard.edu/abs/#3}%
+        {\def\hyper@linkstart##1##2{}%
+         \let\hyper@linkend\@empty\citet[#1][#2]{#3}}%     %% Rutten (2000)
+   \biblink{#3}{\href{http://adsabs.harvard.edu/abs/#3}{ADS}}%
+   \errorstopmode}            %% fix to resume stopping at error messages 
+ \newcommandtwoopt{\citeyearads}[3][][]{%
+   \nonstopmode%              %% fix to not stop at error message in latex
+   \href{http://adsabs.harvard.edu/abs/#3}%
+        {\def\hyper@linkstart##1##2{}%
+         \let\hyper@linkend\@empty\citeyear[#1][#2]{#3}}%  %% 2000
+   \biblink{#3}{\href{http://adsabs.harvard.edu/abs/#3}{ADS}}%
+   \errorstopmode}            %% fix to resume stopping at error messages 
+\makeatother
+
+%% Acronyms
+\newacro{ADS}{Astrophysics Data System}
+\newacro{NLTE}{non-local thermodynamic equilibrium}
+\newacro{NASA}{National Aeronautics and Space Administration}
+
+%% Add popups with meaning to acronyms 
+%% NB: only show up in Adobe Reader and do not work with \input or \include
+\gdef\acp#1{%
+  \pdfmarkupcomment[markup=Underline,color={1 1 1},author={{#1}},opacity=0]%
+  {{#1}}{{\acl{#1}}}}
+
+%% Spectral species
+\def\MgI{\ion{Mg}{I}}          %% A&A; for aastex use \def\MgI{\ion{Mg}{1}} 
+\def\MgII{\ion{Mg}{II}}        %% A&A; for aastex use \def\MgII{\ion{Mg}{2}} 
+
+%% Hyphenation
+\hyphenation{Schrij-ver}       %% Dutch ij is a single character
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}  
+
+%% simple header.  Change into A&A or ApJ commands for those journals
+
+\twocolumn[{%
+\vspace*{4ex}
+\begin{center}
+  {\Large \bf Progress Notes}\\[4ex]       
+  {\large \bf Niu Liu %$^{1, 2}$, 
+              %Author2$^2$
+              %and 
+             % Author3$^3$
+              }\\[4ex]
+%  \begin{minipage}[t]{15cm}
+%        $^1$ Institute1\\
+%        $^2$ Institute2\\
+%        $^3$ Institute3\\
+%
+%  {\bf Abstract.}  We discovered \ldots 
+%
+%  \vspace*{2ex}
+%  \end{minipage}
+\end{center}
+}] 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Introduction}     \label{sec:introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%The phenomenon of \ldots
+
+
+%% {fig:XX}
+%===========================================================================
+%\begin{figure}[hbtp]
+%  \centering
+%  \includegraphics[width=80mm]{XX}
+%  \caption[]{\label{fig:XX}
+%    Caption text \dots
+%  }
+%\end{figure}
+%===========================================================================
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Catalogs and cross identification}    \label{sec:cross-identification}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Three catalogs are used here: Tycho-2\citep{2000A&A...355L..27H} and TGAS sources from GAIA DR1 are used for comparison while the SKY2000 Master Catalog\citep{2015yCat.5145....0M} provides the information on the luminosity  classes and MK spectral types for further stellar classification.
+
+\subsection{Tycho-2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+There are 2\,539\,913 entries in the Tycho-2 main catalog, most with available information of positions and proper motions but no parallaxes. Only single stars are chose in as sample, so the entries with mean position flag "X" or  "P" are excluded.  As a result, 2\,430\,468 entries are remained, in which 118\,543 are Hipparcos entries.
+%% 2 311 925 other entries.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{TGAS}    \label{sec:tgas}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+There are three formats of the TGAS catalog available: csv, fits and votable with the same content. 93\,635 entries common in Hipparcos catalog are labeled  with the Hipparcos identifier while  1\,9
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions} \label{sec:conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{acknowledgements}
+  We are much indebted to Rob Rutten for exemplary instruction.
+  Our research made much use of NASA's Astrophysics Data System.
+\end{acknowledgements}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% references
+\bibliographystyle{aa-note} %% aa.bst but adding links and notes to references
+%%\raggedright              %% only for adsaa with dvips, not for pdflatex
+\bibliography{note}          %% XXX.bib = your Bibtex entries copied from ADS
+
+\end{document}
+

@@ -1,0 +1,245 @@
+
+################################################################################
+### Spin between TGAS and Tycho-2 (All) begins.
+2016-11-15 14:46:06
+Iteration 1: 56340
+Iteration 2: 56352
+Iteration 3: 56349
+Iteration 4: 56349
+Eliminating(2.6-sigma): 1969315/56349 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$-0.011 \pm 0.001$    &$-0.013 \pm 0.001$    &$-0.024 \pm 0.001$
+   correlation coefficients are:
+[[  1.00000000e+00   8.94991128e-04  -8.09477048e-04]
+ [  8.94991128e-04   1.00000000e+00  -3.53430913e-04]
+ [ -8.09477048e-04  -3.53430913e-04   1.00000000e+00]]
+
+################################################################################
+### Spin between TGAS and Tycho-2 (M-K giants only) begins.
+2016-11-15 14:46:15
+Iteration 1: 882
+Iteration 2: 882
+Eliminating(2.6-sigma): 32242/882 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.017 \pm 0.007$    &$-0.003 \pm 0.007$    &$0.013 \pm 0.008$
+   correlation coefficients are:
+[[  1.00000000e+00   6.28479065e-04  -1.64724432e-03]
+ [  6.28479065e-04   1.00000000e+00  -4.29227625e-04]
+ [ -1.64724432e-03  -4.29227625e-04   1.00000000e+00]]
+
+################################################################################
+### Spin between TGAS and Tycho-2 (O-B5 stars only) begins.
+2016-11-15 14:46:15
+Iteration 1: 107
+Iteration 2: 106
+Iteration 3: 106
+Eliminating(2.6-sigma): 5479/106 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.028 \pm 0.016$    &$-0.079 \pm 0.016$    &$-0.008 \pm 0.019$
+   correlation coefficients are:
+[[ 1.         -0.00100198 -0.00429794]
+ [-0.00100198  1.         -0.01602395]
+ [-0.00429794 -0.01602395  1.        ]]
+
+################################################################################
+### Spin between TGAS and Tycho-2 (All) begins.
+2016-11-15 15:30:39
+Iteration 1: 56340
+Iteration 2: 56352
+Iteration 3: 56349
+Iteration 4: 56349
+Eliminating(2.6-sigma): 1969315/56349 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$-0.011 \pm 0.001$    &$-0.013 \pm 0.001$    &$-0.024 \pm 0.001$
+   correlation coefficients are:
+[[  1.00000000e+00   8.94991128e-04  -8.09477048e-04]
+ [  8.94991128e-04   1.00000000e+00  -3.53430913e-04]
+ [ -8.09477048e-04  -3.53430913e-04   1.00000000e+00]]
+
+################################################################################
+### Spin between TGAS and Tycho-2 (M-K giants only) begins.
+2016-11-15 15:30:47
+Iteration 1: 882
+Iteration 2: 882
+Eliminating(2.6-sigma): 32242/882 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.017 \pm 0.007$    &$-0.003 \pm 0.007$    &$0.013 \pm 0.008$
+   correlation coefficients are:
+[[  1.00000000e+00   6.28479065e-04  -1.64724432e-03]
+ [  6.28479065e-04   1.00000000e+00  -4.29227625e-04]
+ [ -1.64724432e-03  -4.29227625e-04   1.00000000e+00]]
+
+################################################################################
+### Spin between TGAS and Tycho-2 (O-B5 stars only) begins.
+2016-11-15 15:30:47
+Iteration 1: 107
+Iteration 2: 106
+Iteration 3: 106
+Eliminating(2.6-sigma): 5479/106 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.028 \pm 0.016$    &$-0.079 \pm 0.016$    &$-0.008 \pm 0.019$
+   correlation coefficients are:
+[[ 1.         -0.00100198 -0.00429794]
+ [-0.00100198  1.         -0.01602395]
+ [-0.00429794 -0.01602395  1.        ]]
+
+################################################################################
+### Spin between TGAS and Tycho-2 (All) begins.
+2016-11-16 23:50:40
+Iteration 1: 56340
+Iteration 2: 56352
+Iteration 3: 56349
+Iteration 4: 56349
+Eliminating(2.6-sigma): 1969315/56349 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$-0.011 \pm 0.004$    &$-0.013 \pm 0.004$    &$-0.024 \pm 0.005$
+   correlation coefficients are:
+[[  1.00000000e+00   8.94991128e-04  -8.09477048e-04]
+ [  8.94991128e-04   1.00000000e+00  -3.53430913e-04]
+ [ -8.09477048e-04  -3.53430913e-04   1.00000000e+00]]
+
+################################################################################
+### Spin between TGAS and Tycho-2 (M-K giants only) begins.
+2016-11-16 23:50:50
+Iteration 1: 882
+Iteration 2: 882
+Eliminating(2.6-sigma): 32242/882 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.017 \pm 0.013$    &$-0.003 \pm 0.013$    &$0.013 \pm 0.016$
+   correlation coefficients are:
+[[  1.00000000e+00   6.28479065e-04  -1.64724432e-03]
+ [  6.28479065e-04   1.00000000e+00  -4.29227625e-04]
+ [ -1.64724432e-03  -4.29227625e-04   1.00000000e+00]]
+
+################################################################################
+### Spin between TGAS and Tycho-2 (O-B5 stars only) begins.
+2016-11-16 23:50:50
+Iteration 1: 107
+Iteration 2: 106
+Iteration 3: 106
+Eliminating(2.6-sigma): 5479/106 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.028 \pm 0.048$    &$-0.079 \pm 0.048$    &$-0.008 \pm 0.058$
+   correlation coefficients are:
+[[ 1.         -0.00100198 -0.00429794]
+ [-0.00100198  1.         -0.01602395]
+ [-0.00429794 -0.01602395  1.        ]]
+
+################################################################################
+### Spin between TGAS and Hip2 (All) begins.
+2016-12-09 01:17:53
+Iteration 1: 2949
+Iteration 2: 2950
+Iteration 3: 2949
+Iteration 4: 2948
+Iteration 5: 2948
+Eliminating(2.6-sigma): 86849/2948 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.008 \pm 0.007$    &$0.010 \pm 0.007$    &$-0.014 \pm 0.009$
+   correlation coefficients are:
+[[  1.00000000e+00   1.72491871e-03  -4.77089744e-04]
+ [  1.72491871e-03   1.00000000e+00  -1.20825711e-03]
+ [ -4.77089744e-04  -1.20825711e-03   1.00000000e+00]]
+
+################################################################################
+### Spin between TGAS and Hip2 (M-K giants only) begins.
+2016-12-09 01:17:54
+Iteration 1: 507
+Iteration 2: 509
+Iteration 3: 509
+Eliminating(2.6-sigma): 13308/509 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$-0.009 \pm 0.013$    &$0.010 \pm 0.013$    &$-0.009 \pm 0.015$
+   correlation coefficients are:
+[[  1.00000000e+00   2.55223090e-04   1.03630263e-03]
+ [  2.55223090e-04   1.00000000e+00   2.21382145e-03]
+ [  1.03630263e-03   2.21382145e-03   1.00000000e+00]]
+
+################################################################################
+### Spin between TGAS and Hip2 (O-B5 stars only) begins.
+2016-12-09 01:17:54
+
+################################################################################
+### Spin between TGAS and Hip2 (All) begins.
+2016-12-09 01:18:12
+Iteration 1: 2949
+Iteration 2: 2950
+Iteration 3: 2949
+Iteration 4: 2948
+Iteration 5: 2948
+Eliminating(2.6-sigma): 86849/2948 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.008 \pm 0.007$    &$0.010 \pm 0.007$    &$-0.014 \pm 0.009$
+   correlation coefficients are:
+[[  1.00000000e+00   1.72491871e-03  -4.77089744e-04]
+ [  1.72491871e-03   1.00000000e+00  -1.20825711e-03]
+ [ -4.77089744e-04  -1.20825711e-03   1.00000000e+00]]
+
+################################################################################
+### Spin between TGAS and Hip2 (M-K giants only) begins.
+2016-12-09 01:18:12
+Iteration 1: 507
+Iteration 2: 509
+Iteration 3: 509
+Eliminating(2.6-sigma): 13308/509 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$-0.009 \pm 0.013$    &$0.010 \pm 0.013$    &$-0.009 \pm 0.015$
+   correlation coefficients are:
+[[  1.00000000e+00   2.55223090e-04   1.03630263e-03]
+ [  2.55223090e-04   1.00000000e+00   2.21382145e-03]
+ [  1.03630263e-03   2.21382145e-03   1.00000000e+00]]
+
+################################################################################
+### Spin between TGAS and Hip2 (O-B5 stars only) begins.
+2016-12-09 01:18:12
+Iteration 1: 83
+Iteration 2: 83
+Eliminating(2.6-sigma): 1904/83 (objects/Outliers).
+
+    After elimination: 
+the orientation/spin are(mas*yr-1):
+ :
+    &$0.010 \pm 0.030$    &$0.059 \pm 0.030$    &$-0.034 \pm 0.037$
+   correlation coefficients are:
+[[ 1.          0.00656888 -0.00180801]
+ [ 0.00656888  1.         -0.0079463 ]
+ [-0.00180801 -0.0079463   1.        ]]

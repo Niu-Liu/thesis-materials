@@ -1,0 +1,26 @@
+@ARTICLE{2000A&A...355L..27H,
+	   author = {{H{\o}g}, E. and {Fabricius}, C. and {Makarov}, V.~V. and {Urban}, S. and 
+			{Corbin}, T. and {Wycoff}, G. and {Bastian}, U. and {Schwekendiek}, P. and 
+				{Wicenec}, A.},
+	       title = "{The Tycho-2 catalogue of the 2.5 million brightest stars}",
+		     journal = {\aap},
+			  keywords = {ASTROMETRY, STARS: FUNDAMENTAL PARAMETERS, CATALOGS},
+			       year = 2000,
+				       month = mar,
+					      volume = 355,
+						      pages = {L27-L30},
+							     adsurl = {http://cdsads.u-strasbg.fr/abs/2000A%26A...355L..27H},
+								   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{2015yCat.5145....0M,
+	   author = {{Myers}, J.~R. and {Sande}, C.~B. and {Miller}, A.~C. and {Warren}, Jr., W.~H. and 
+			{Tracewell}, D.~A.},
+	       title = "{VizieR Online Data Catalog: SKY2000 Master Catalog, Version 5 (Myers+ 2006)}",
+		     journal = {VizieR Online Data Catalog},
+			  keywords = {Positional data, Cross identifications, Combined data, Surveys},
+			       year = 2015,
+				       month = feb,
+					      volume = 5145,
+						     adsurl = {http://cdsads.u-strasbg.fr/abs/2015yCat.5145....0M},
+							   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}

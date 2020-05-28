@@ -1,0 +1,227 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr 19 20:43:50 2016
+
+@author: neo
+
+Calculate the standard variance, Allan Variance, goodness of fit.
+
+Oct 14 2016, Niu:  
+"""
+
+from fun import ADepoA
+import numpy as np
+import time
+cos = np.cos
+
+def mean(x, sig):
+    N = x.size
+    p = sig**-2
+## weighted average
+    ave = sum(p*x)/sum(p)
+## Standard deviation of residual series.
+    if N <= 2:
+        ave, std_ave, std = 0, 0, 0
+    else:        
+## residual series.
+        ve = x-ave
+        rms = np.sqrt(sum(ve**2)/(N-1))
+## eliminate outliers.
+        tem = np.fabs(ve) - 2.6*rms
+        ind = np.where(tem<0)[0]
+        ve = np.take(ve, ind)
+        N = ve.size
+        if N <= 2:
+            ave, std_ave, std = 0, 0, 0
+        else:
+            p  = np.take(p,  ind)
+            x  = np.take(x,  ind)
+            ave = sum(p*x)/sum(p)
+            ve = x-ave
+#            rms = np.sqrt(sum(ve**2)/(N-1))
+## weughted residual series.
+            v = np.sqrt(p)*ve
+#            std = np.sqrt(sum(v**2)/(N-1))*rms
+            std = np.sqrt(sum(v**2)/sum(p))
+#            std = rms
+## Standard deviation of weighted average.
+            std_ave = std/np.sqrt(sum(p))
+    
+    return [ave, std_ave, std]
+
+##read the list of source name 
+cat_dir = '../list/'
+cat_fil = 'new_candidate2.cat'
+catlg = np.loadtxt(cat_dir+cat_fil, dtype=str)
+
+dat_dir='../data/opa/'
+
+out_fil = '../results/variance.dat'
+fout = open(out_fil, 'w')
+print>>fout, time.strftime('## This list was generated at %Y-%m-%d %H:%M:%S',\
+    time.localtime(time.time()))
+print>>fout, \
+'''##format:
+##soure  Num_ave    R.A.                 Decl.            
+##                mean  Std  AStd WAd | mean  Std  AStd WAd
+## Num_ave: Number of one-year average points
+## unit: deg for mean while mas for the others'''
+
+##  linear drift data.
+apm = '../results/opa_all.apm'
+RA0, DE0 = np.loadtxt(apm, usecols=(7,8), unpack=True)
+souname = np.loadtxt(apm, dtype=str, usecols=(0,))
+
+for i in range(catlg.size):
+    soun = catlg[i]
+
+##  obtain the R.A. and Dec. from the linear fitting result 
+    ind0 = np.where(souname == soun)[0]
+    DE  = np.take(DE0, ind0)[0]
+    RA  = np.take(RA0, ind0)[0]*3.6e6*cos(np.deg2rad(DE))         #mas 
+    DE  = np.take(DE0, ind0)[0]*3.6e6                             #mas   
+
+    t, rac, dec, sigra, sigde = \
+    np.loadtxt(dat_dir+soun+'.dat', usecols=range(5), unpack=True)
+    ## Unit: Julian day, deg, deg, mas, mas
+    
+    t = ADepoA(t)                                #yr
+    rac = rac*3.6e6*cos(np.deg2rad(dec))         #mas
+    sigra = sigra*cos(np.deg2rad(dec))
+    dec = dec*3.6e6                              #mas
+    
+## only data in 1979.0~2015.0 is used.
+    ind1 = np.where(t<=2015.0)[0]
+### points with d_R.A. > n* sigma or d_Dec. > n* sigma or Delta are considered outliers.
+#    n = 5.0
+#    ind21 = np.where( np.fabs(rac-RA)-n*sigra<0 )[0]
+#    ind22 = np.where( np.fabs(dec-DE)-n*sigde<0 )[0]
+#    ind2 = np.intersect1d(ind21, ind22)
+### combine these two limitationtts.
+#    ind  = np.intersect1d(ind1, ind2)
+## filter these outliers
+## if the data points remained are less 9, may we could not consider the filter is good. 
+#    if len(ind)<=9:
+#        Delta = 5.0e3   #5"
+#        ind21 = np.where(rac-RA < Delta)[0]
+#        ind22 = np.where(dec-DE < Delta)[0]
+#        ind2  = np.intersect1d(ind21, ind22)
+#        ind   = np.intersect1d(ind1, ind2)
+#        
+##  And if the data point is too far away from its neighborhood, it will be ejected
+    ind2 = [ i for i in range(t.size-1) \
+            if max([np.fabs(rac[i]-rac[i-1]), np.fabs(rac[i]-rac[i+1]), \
+                    np.fabs(dec[i]-dec[i-1]), np.fabs(dec[i]-dec[i+1])])<1000 ]
+    ind   = np.intersect1d(ind1, ind2)
+
+    t = np.take(t, ind)
+    rac = np.take(rac, ind)
+    dec = np.take(dec, ind)
+    sigra = np.take(sigra, ind)
+    sigde = np.take(sigde, ind)
+
+## standard deviation        
+    [ma, sigma, deva] = mean(rac, sigra)        #mas
+    [md, sigmd, devd] = mean(dec, sigde)        #mas
+    
+    md = md/3.6e6                               #deg
+    ma = ma/3.6e6/cos(np.deg2rad(md))           #deg
+    
+##one-year-average
+    ep1 = []
+    ra1 = []
+    sigra1 = []
+    de1 = []
+    sigde1 = []
+
+    t1 = 1979
+    t2 = 2015
+    twd = t1
+    sta = 0
+    while twd <= t2:
+        ind = [ i for i in range(sta, t.size) if twd<t[i]<twd+1 ]
+        if len(ind) >= 3:
+            '''
+if there are few points less than 3 in a windows, the data points are not used.
+            '''
+            racs = np.take(rac, ind)
+            decs = np.take(dec, ind)
+            sigras = np.take(sigra, ind)
+            sigdes = np.take(sigde, ind)
+            
+            [ma1, sigma1, deva1] = mean(racs, sigras) #mas
+            [md1, sigmd1, devd1] = mean(decs, sigdes) #mas
+            
+            if ma1 and md1:     
+                ep1.append(twd)                           #year
+                ra1.append(ma1)                           #mas
+                sigra1.append(sigma1)                     #mas
+                de1.append(md1)                           #mas
+                sigde1.append(sigmd1)                     #mas
+            
+        twd += 1
+      
+## Here what we want is a equal-spaced time series. If not, interpolate will be used.
+    ras = np.array([], dtype=float)
+    des = np.array([], dtype=float)
+    sigras = np.array([], dtype=float)
+    sigdes = np.array([], dtype=float)
+        
+    for i in range(len(ep1)-1):
+        Nsub = ep1[i+1] - ep1[i]
+        rasub = np.linspace(ra1[i], ra1[i+1], Nsub)
+        desub = np.linspace(de1[i], de1[i+1], Nsub)
+        sigrasub = np.ones(Nsub)*sigra1[i]
+        sigdesub = np.ones(Nsub)*sigde1[i]
+
+        ras = np.hstack((ras, rasub))
+        des = np.hstack((des, desub))
+        sigras = np.hstack((sigras, sigrasub))
+        sigdes = np.hstack((sigdes, sigdesub))
+    
+##Allan standard deviation
+    N_ave = len(ep1)
+    N_dat = ras.size
+#    print N_ave, N_dat
+
+    AVar_a = 0.0
+    AVar_d = 0.0
+    
+#WADEV, proposed by Malkin.    
+    WAd_a = 0.0
+    WAd_d = 0.0
+    p_a = 0.0
+    p_d = 0.0
+    
+    for i in range(N_dat-1):
+        AVar_a += (ras[i+1]-ras[i])**2
+        AVar_d += (des[i+1]-des[i])**2
+            
+        pi_a = 1.0/(sigras[i]**2 + sigras[i+1]**2)
+        pi_d = 1.0/(sigdes[i]**2 + sigdes[i+1]**2)
+        WAd_a += pi_a*(ras[i+1]-ras[i])**2
+        WAd_d += pi_d*(des[i+1]-des[i])**2
+        
+        p_a += pi_a
+        p_d += pi_d
+    
+    if N_dat-1 and p_a and p_d:       
+        ASd_a = np.sqrt(AVar_a/2/(N_dat-1))
+        ASd_d = np.sqrt(AVar_d/2/(N_dat-1))
+            
+        WAd_a = np.sqrt(WAd_a/p_a/2.0)
+        WAd_d = np.sqrt(WAd_d/p_d/2.0)
+    else:
+## 10 mas is an upper limit of selecting candidates, which means these sources
+## with less good observations will be ejected.
+## maybe not.
+        WAd_a ,WAd_d ,p_a ,p_d = np.ones(4)*0.0
+        
+#store the eatimators into file.
+    print>>fout, soun + \
+    ("   %2d"+"   %10.4f"*8)\
+    %(N_ave, ma, deva, ASd_a, WAd_a, md, devd, ASd_d, WAd_d)
+
+fout.close()
+
+print 'Done!'

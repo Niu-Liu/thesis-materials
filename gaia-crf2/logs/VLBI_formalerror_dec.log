@@ -1,0 +1,216 @@
+# Number of source in [-90, -75):   25
+
+# For R.A. component (N >= 5):
+# scaling factor: 1.37 +/- 0.48
+# noise floor: 0.094 +/- 0.100 mas
+# data points: 12
+# variables: 2
+# chi-square: 321239.45 (uas^2)
+# reduced chi-square: 32123.94 (uas^2)
+
+For Dec. component (N >= 5):
+scaling factor: 1.45 +/- 0.33
+noise floor: 0.101 +/- 0.074 mas
+# data points: 12
+# variables: 2
+# chi-square: 189762.09 (uas^2)
+# reduced chi-square: 18976.21 (uas^2)
+
+# Number of source in [-75, -60):   78
+
+# For R.A. component (N >= 20):
+# scaling factor: 1.05 +/- 0.17
+# noise floor: 0.018 +/- 0.034 mas
+# data points: 17
+# variables: 2
+# chi-square: 6510.99 (uas^2)
+# reduced chi-square: 434.07 (uas^2)
+
+For Dec. component (N >= 20):
+scaling factor: 1.21 +/- 0.08
+noise floor: 0.000 +/- 60.859 mas
+# data points: 17
+# variables: 2
+# chi-square: 8335.37 (uas^2)
+# reduced chi-square: 555.69 (uas^2)
+
+# Number of source in [-60, -45):   85
+
+# For R.A. component (N >= 20):
+# scaling factor: 1.09 +/- 0.05
+# noise floor: 0.022 +/- 0.008 mas
+# data points: 13
+# variables: 2
+# chi-square: 531.38 (uas^2)
+# reduced chi-square: 48.31 (uas^2)
+
+For Dec. component (N >= 20):
+scaling factor: 1.45 +/- 0.06
+noise floor: 0.022 +/- 0.030 mas
+# data points: 13
+# variables: 2
+# chi-square: 2665.93 (uas^2)
+# reduced chi-square: 242.36 (uas^2)
+
+# Number of source in [-45, -30):  223
+
+# For R.A. component (N >= 40):
+# scaling factor: 1.17 +/- 0.04
+# noise floor: 0.022 +/- 0.002 mas
+# data points: 22
+# variables: 2
+# chi-square: 405.44 (uas^2)
+# reduced chi-square: 20.27 (uas^2)
+
+For Dec. component (N >= 40):
+scaling factor: 0.59 +/- 0.12
+noise floor: 0.042 +/- 0.005 mas
+# data points: 22
+# variables: 2
+# chi-square: 15560.21 (uas^2)
+# reduced chi-square: 778.01 (uas^2)
+
+# Number of source in [-30, -15):  430
+
+# For R.A. component (N >= 100):
+# scaling factor: 1.40 +/- 0.07
+# noise floor: -0.000 +/- 13.915 mas
+# data points: 23
+# variables: 2
+# chi-square: 843.51 (uas^2)
+# reduced chi-square: 40.17 (uas^2)
+
+For Dec. component (N >= 100):
+scaling factor: 1.14 +/- 0.06
+noise floor: 0.018 +/- 0.003 mas
+# data points: 23
+# variables: 2
+# chi-square: 1004.17 (uas^2)
+# reduced chi-square: 47.82 (uas^2)
+
+# Number of source in [-15,  +0):  328
+
+# For R.A. component (N >= 100):
+# scaling factor: 1.15 +/- 0.07
+# noise floor: 0.000 +/- 10.483 mas
+# data points: 19
+# variables: 2
+# chi-square: 277.96 (uas^2)
+# reduced chi-square: 16.35 (uas^2)
+
+For Dec. component (N >= 100):
+scaling factor: 0.80 +/- 0.12
+noise floor: 0.021 +/- 0.002 mas
+# data points: 19
+# variables: 2
+# chi-square: 2576.34 (uas^2)
+# reduced chi-square: 151.55 (uas^2)
+
+# Number of source in [ +0, +15):  427
+
+# For R.A. component (N >= 50):
+# scaling factor: 1.58 +/- 0.04
+# noise floor: 0.003 +/- 0.007 mas
+# data points: 47
+# variables: 2
+# chi-square: 911.54 (uas^2)
+# reduced chi-square: 20.26 (uas^2)
+
+For Dec. component (N >= 50):
+scaling factor: 0.99 +/- 0.09
+noise floor: 0.030 +/- 0.003 mas
+# data points: 47
+# variables: 2
+# chi-square: 13121.41 (uas^2)
+# reduced chi-square: 291.59 (uas^2)
+
+# Number of source in [+15, +30):  356
+
+# For R.A. component (N >= 50):
+# scaling factor: 1.44 +/- 0.05
+# noise floor: 0.013 +/- 0.002 mas
+# data points: 37
+# variables: 2
+# chi-square: 521.56 (uas^2)
+# reduced chi-square: 14.90 (uas^2)
+
+For Dec. component (N >= 50):
+scaling factor: 0.98 +/- 0.05
+noise floor: 0.013 +/- 0.002 mas
+# data points: 37
+# variables: 2
+# chi-square: 1401.88 (uas^2)
+# reduced chi-square: 40.05 (uas^2)
+
+# Number of source in [+30, +45):  297
+
+# For R.A. component (N >= 50):
+# scaling factor: 1.09 +/- 0.10
+# noise floor: 0.008 +/- 0.003 mas
+# data points: 28
+# variables: 2
+# chi-square: 325.73 (uas^2)
+# reduced chi-square: 12.53 (uas^2)
+
+For Dec. component (N >= 50):
+scaling factor: 0.61 +/- 0.23
+noise floor: 0.026 +/- 0.002 mas
+# data points: 28
+# variables: 2
+# chi-square: 9567.08 (uas^2)
+# reduced chi-square: 367.96 (uas^2)
+
+# Number of source in [+45, +60):  228
+
+# For R.A. component (N >= 20):
+# scaling factor: 1.90 +/- 0.12
+# noise floor: 0.000 +/- 14.912 mas
+# data points: 31
+# variables: 2
+# chi-square: 3090.34 (uas^2)
+# reduced chi-square: 106.56 (uas^2)
+
+For Dec. component (N >= 20):
+scaling factor: 1.41 +/- 0.04
+noise floor: 0.020 +/- 0.002 mas
+# data points: 31
+# variables: 2
+# chi-square: 1989.90 (uas^2)
+# reduced chi-square: 68.62 (uas^2)
+
+# Number of source in [+60, +75):  169
+
+# For R.A. component (N >= 30):
+# scaling factor: 1.10 +/- 0.06
+# noise floor: 0.016 +/- 0.002 mas
+# data points: 15
+# variables: 2
+# chi-square: 117.40 (uas^2)
+# reduced chi-square: 9.03 (uas^2)
+
+For Dec. component (N >= 30):
+scaling factor: 2.03 +/- 0.06
+noise floor: 0.000 +/- 0.124 mas
+# data points: 15
+# variables: 2
+# chi-square: 251.03 (uas^2)
+# reduced chi-square: 19.31 (uas^2)
+
+# Number of source in [+75, +90):   58
+
+# For R.A. component (N >= 2):
+# scaling factor: 1.12 +/- 0.21
+# noise floor: 0.030 +/- 0.009 mas
+# data points: 8
+# variables: 2
+# chi-square: 1258.45 (uas^2)
+# reduced chi-square: 209.74 (uas^2)
+
+For Dec. component (N >= 2):
+scaling factor: 0.76 +/- 0.09
+noise floor: 0.019 +/- 0.005 mas
+# data points: 8
+# variables: 2
+# chi-square: 775.84 (uas^2)
+# reduced chi-square: 129.31 (uas^2)
+
